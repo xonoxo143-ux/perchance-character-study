@@ -1,43 +1,61 @@
-# Salvage Source Material
+# Perchance ACC character-study export
 
-This folder is for recovered thread material from the ACC character-study salvage zip.
+## What this repo is
+This zip is a handoff pack for continuing Perchance **AI Character Chat (ACC)** study work without reopening the full thread.
 
-The salvage material should be preserved separately from cleaned guidance.
+It is not a polished guide.
+It is a working research bundle.
 
-Use it for:
+The material here is split into:
+- **confirmed findings** from direct tests or strong verification
+- **untested / partial theories**
+- **layer interaction notes**
+- **character-building patterns**
+- **failed or parked ideas**
+- **open questions**
+- **mutation log** showing how the project changed over time
+- **examples** that can be reused directly
 
-- confirmed findings that need review
-- untested theories
-- failed or rejected ideas
-- parked ideas
-- mutation history
-- examples and snippets
+## What problem this thread was solving
+The thread was trying to answer two linked questions:
 
-## Manual upload target
+1. **How ACC layers actually interact in practice**
+   - role / instruction
+   - reminder
+   - GWI
+   - system initial messages
+   - AI initial messages
+   - character lorebook URLs
+   - direct thread lore via `/lore`
+   - thread overrides
+   - slash commands
+   - custom code
 
-Extract `perchance_acc_character_study_repo_export.zip` and place its contents here:
+2. **How to build better ACC characters without false diagnoses**
+   - when the problem is really the opener, not the role
+   - when lore is doing the wrong job
+   - how duplication across layers flattens characters
+   - how to structure complex user / host / system builds
+   - how to test cleanly instead of vibes-only editing
 
-```text
-source-material/salvage/
-```
+## How to use this zip
+Suggested order:
 
-Expected files include:
+1. `ACC_CONFIRMED_FINDINGS.md`
+2. `ACC_LAYER_BEHAVIOR_NOTES.md`
+3. `CHARACTER_STRUCTURE_PATTERNS.md`
+4. `FAILED_OR_REJECTED_IDEAS.md`
+5. `OPEN_QUESTIONS.md`
+6. `EXAMPLES/`
 
-```text
-README.md
-ACC_CONFIRMED_FINDINGS.md
-ACC_UNTESTED_THEORIES.md
-ACC_LAYER_BEHAVIOR_NOTES.md
-CHARACTER_STRUCTURE_PATTERNS.md
-FAILED_OR_REJECTED_IDEAS.md
-PARKED_IDEAS.md
-OPEN_QUESTIONS.md
-MUTATION_LOG.md
-ACC_EXPORT_JSON_STRUCTURE_NOTES.md
-SOURCES_USED.md
-EXAMPLES/
-```
+## Scope notes
+- This pack focuses on **ACC / character study**, not the later off-topic AI-consciousness discussion.
+- Some build notes are **project-specific** to the Horde / complex-`{{user}}` work. Those are labeled as such.
+- Some earlier tests were later found to be confounded by **fresh-thread vs imported-thread** differences. Those are kept, but marked accordingly.
 
-## Rule
-
-Do not treat salvage notes as final guidance until they are sorted into confirmed, provisional, untested, failed, or parked.
+## Short caution list
+- Do not merge confirmed behavior and theory.
+- Do not use imported prebuilt threads as if they were fresh startup proofs.
+- Do not assume slash-looking text pushed by custom code is a real slash command.
+- Do not assume lore “lost” unless lore actually loaded / `loreIdsUsed` shows it engaged.
+- Do not over-rewrite a role block when the real problem is opener / cadence / GWI / duplication.
