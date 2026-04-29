@@ -17,6 +17,37 @@ Build a character
 → rebuild better
 ```
 
+## Quick start
+
+If you are looking for characters, start here:
+
+```text
+library/character-index.md
+```
+
+If you are continuing the project as an assistant, start here:
+
+```text
+docs/ASSISTANT_WORKFLOW.md
+```
+
+If you are diagnosing ACC behavior, start here:
+
+```text
+foundation/layer-precedence-map.md
+foundation/open-test-matrix.md
+```
+
+If you are building a character, start here:
+
+```text
+build-lane/character-construction-guide.md
+build-lane/role-reminder-gwi-split-guide.md
+build-lane/opener-and-initial-message-guide.md
+build-lane/lorebook-design-guide.md
+build-lane/failure-diagnosis-guide.md
+```
+
 ## Front room and lab
 
 The repo has two major spaces:
@@ -127,4 +158,4 @@ This repo began from a copied Perchance URL-to-character generator reference. Th
 source-material/external/copied-repo-readme.md
 ```
 
-The repo is now being restructured into a dual-purpose ACC character build and foundation lab with a library front room.
+The repo is now a dual-purpose ACC character build and foundation lab with a library front room.
