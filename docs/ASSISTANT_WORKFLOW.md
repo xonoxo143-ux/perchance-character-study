@@ -14,10 +14,13 @@ When continuing this project, read in this order:
 3. SOURCE_TRUST_MODEL.md
 4. docs/RE_ANCHORING_PROTOCOL.md
 5. foundation/layer-precedence-map.md
-6. foundation/field-behavior-map.md
-7. build-lane/character-construction-guide.md
-8. build-lane/failure-diagnosis-guide.md
-9. foundation/open-test-matrix.md
+6. build-lane/role-reminder-gwi-split-guide.md
+7. build-lane/opener-and-initial-message-guide.md
+8. build-lane/lorebook-design-guide.md
+9. build-lane/character-construction-guide.md
+10. build-lane/failure-diagnosis-guide.md
+11. foundation/field-behavior-map.md
+12. foundation/open-test-matrix.md
 ```
 
 Then inspect source material only when a claim needs evidence.
@@ -73,6 +76,17 @@ Use this order:
 6. Check lore retrieval before saying lore failed.
 7. Check thread overrides/import state before blaming the build.
 8. Make the smallest testable fix.
+```
+
+Relevant guides:
+
+```text
+build-lane/role-reminder-gwi-split-guide.md
+build-lane/opener-and-initial-message-guide.md
+build-lane/lorebook-design-guide.md
+build-lane/failure-diagnosis-guide.md
+foundation/layer-precedence-map.md
+foundation/open-test-matrix.md
 ```
 
 ## When adding a character
