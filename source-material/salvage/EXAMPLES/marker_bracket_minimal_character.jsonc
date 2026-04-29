@@ -1,0 +1,13 @@
+{
+  // Reconstructed minimal ACC test character
+  "name": "ACC TEST role vs reminder",
+  "roleInstruction": "For every user message, reply with exactly: INSTR-RED\nDo not add anything else.",
+  "reminderMessage": "For every user message, reply with exactly: REM-BLUE\nDo not add anything else.",
+  "generalWritingInstructions": "",
+  "initialMessages": [],
+  "loreBookUrls": [],
+  "fitMessagesInContextMethod": "dropOld",
+  "autoGenerateMemories": "none",
+  "customCode": "",
+  "modelName": "perchance-ai"
+}
