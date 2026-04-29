@@ -61,6 +61,20 @@ These tests support `build-lane/lorebook-design-guide.md`.
 | ACC-LORE-008 | Does direct thread lore beat GWI in clean conflict? | Open | Unknown | Completes direct thread lore placement against style layer. |
 | ACC-MEM-001 | Memory/summary placement versus role/reminder/lore | Open | Likely weaker than reminder, variable retrieval | Needed before treating long-thread behavior as simple forgetting or simple hierarchy. |
 
+### Online-doc comparison tests
+
+These tests come from comparing public docs/community notes against local findings.
+
+| Test ID | Question | Status | Predicted result | Why it matters |
+|---|---|---:|---|---|
+| ACC-DOC-001 | Plain role text vs explicit `[SYSTEM]` role text | Designed | Equivalent or near-equivalent behavior | Public docs describe plain role text as equivalent to system-authored role text. |
+| ACC-DOC-002 | Plain reminder vs explicit `[SYSTEM]` reminder | Open | Similar strength, possible wording/parroting differences | Tests whether authored reminder syntax changes behavior. |
+| ACC-DOC-003 | Plain reminder vs `[AI]: (Thought: ...)` reminder | Designed | Thought-form reminder may reduce reply-to-reminder artifacts | Public docs recommend thought-form reminders; repo has not tested behavior difference. |
+| ACC-DOC-004 | Does `[AI]: (Thought: ...)` reduce reminder parroting? | Designed | Yes, under literal reminder phrasing | Tests a practical mitigation for reminder parroting. |
+| ACC-DOC-005 | Does token crowding weaken or distort lower-priority fields? | Open | Yes, especially GWI/lore/memory; reminder may survive better | Tests the public/community token-budget warning. |
+| ACC-DOC-006 | Existing-thread lore URL reload behavior | Open | Existing threads may need lore reload after URL changes | Tests public-doc reload advice in local ACC setup. |
+| ACC-DOC-007 | Group chat/main-character lore/custom-code behavior | Parked | Main-thread character may control shared lore/custom code | Park until group-chat work matters. |
+
 ### Runtime / custom-code placement
 
 | Test ID | Question | Status | Predicted result | Why it matters |
@@ -385,6 +399,66 @@ Evidence to record:
 
 Promotion rule:
 If role/role+ lore versions preserve behavior more reliably than lore-only, strengthen the move-up rule.
+```
+
+### ACC-DOC-001 — Plain role text vs explicit system role text
+
+```text
+Question:
+Is plain role text equivalent or near-equivalent to explicit `[SYSTEM]:` role text?
+
+Why it matters:
+Public docs describe plain role/instruction text as equivalent to a system-authored role message.
+
+Setup:
+Create two characters:
+A. role text: `Always answer with DOC-RED.`
+B. role text: `[SYSTEM]: Always answer with DOC-RED.`
+
+Keep reminder, GWI, opener, and lore blank or identical.
+
+Prompt:
+Hello
+
+Evidence to record:
+- exact output marker
+- export role field shape if relevant
+- any difference in phrasing or stability across repeated prompts
+
+Promotion rule:
+If behavior is equivalent, record the authored-form mechanic as confirmed for role text equivalence.
+```
+
+### ACC-DOC-003 / ACC-DOC-004 — Thought-form reminder behavior
+
+```text
+Question:
+Does `[AI]: (Thought: ...)` reminder form reduce reminder parroting or reply-to-reminder artifacts compared with plain reminder text?
+
+Why it matters:
+Public docs recommend this form, but local precedence/parroting behavior has not been tested.
+
+Setup:
+Create three versions:
+A. plain reminder with literal target phrase
+B. `[SYSTEM]:` reminder with same phrase
+C. `[AI]: (Thought: same phrase)` reminder
+
+Keep role and GWI identical.
+
+Prompt set:
+1. Hello
+2. direct scene/action prompt
+3. prompt that conflicts mildly with reminder
+
+Evidence to record:
+- whether marker/behavior appears
+- whether hidden wording is parroted visibly
+- whether reply treats reminder like something to answer
+- whether behavior strength changes
+
+Promotion rule:
+If thought-form reminder reduces artifacts without weakening desired behavior, add it as a recommended advanced reminder pattern. If it changes precedence, update layer map.
 ```
 
 ---
