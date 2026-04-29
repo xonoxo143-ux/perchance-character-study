@@ -45,13 +45,20 @@ These tests support `build-lane/opener-and-initial-message-guide.md`.
 | ACC-OPEN-005 | Does removing opener reveal whether role is actually weak? | Open | Some “bad character” symptoms disappear when opener is shortened/removed | Tests whether opener bias causes false role diagnosis. |
 | ACC-OPEN-006 | How long does opener bias persist across turns? | Open | Bias decays but can persist if reinforced by role/reminder/GWI | Needed before giving stronger long-thread guidance. |
 
-### Lore / retrieval placement
+### Lore / retrieval slice
+
+These tests support `build-lane/lorebook-design-guide.md`.
 
 | Test ID | Question | Status | Predicted result | Why it matters |
 |---|---|---:|---|---|
-| ACC-LAYER-002 | Direct thread lore vs GWI | Open | Unknown | Completes lore placement against style layer. |
-| ACC-LAYER-003 | Character lore URL vs GWI | Open | Unknown | Completes character lore URL placement against style layer. |
-| ACC-LAYER-004 | Direct thread lore vs character lore URL | Open | Direct thread lore may be more immediate | Clarifies conflict resolution between lore sources. |
+| ACC-LORE-001 | Does a self-contained lore entry retrieve more reliably than a vague/dependent entry? | Designed | Self-contained entry retrieves and applies more reliably | Tests the guide's self-contained entry rule. |
+| ACC-LORE-002 | Do explicit retrieval cues improve lore engagement? | Designed | Entries with names/aliases/terms retrieve more reliably | Tests the guide's retrieval cue rule. |
+| ACC-LORE-003 | Can lore engage and still lose to stronger layers? | Confirmed | Yes | Already supported by role/reminder/system-initial conflicts with non-empty `loreIdsUsed`; keep as a reference test pattern. |
+| ACC-LORE-004 | When should a fact move from lore to role? | Designed | Always-on behavior performs better in role than lore-only | Tests the guide's move-up rule. |
+| ACC-LORE-005 | When should a fact move from lore to reminder? | Open | Current-state guardrails perform better as short reminders than lore-only | Tests whether immediate state correction should move upward. |
+| ACC-LORE-006 | Does direct thread lore beat character lore URL in clean conflict? | Open | Unknown; direct thread lore may be more immediate | Clarifies conflict resolution between lore sources. |
+| ACC-LORE-007 | Does character lore URL beat GWI in clean conflict? | Open | Unknown | Completes character lore URL placement against style layer. |
+| ACC-LORE-008 | Does direct thread lore beat GWI in clean conflict? | Open | Unknown | Completes direct thread lore placement against style layer. |
 | ACC-MEM-001 | Memory/summary placement versus role/reminder/lore | Open | Likely weaker than reminder, variable retrieval | Needed before treating long-thread behavior as simple forgetting or simple hierarchy. |
 
 ### Runtime / custom-code placement
@@ -287,6 +294,99 @@ Promotion rule:
 If system initial wins cleanly in conflict, strengthen the guide's warning that system initial is startup control, not ordinary opener text.
 ```
 
+### ACC-LORE-001 — Self-contained lore entry reliability
+
+```text
+Question:
+Does a self-contained lore entry retrieve and apply more reliably than a vague/dependent entry?
+
+Why it matters:
+ACC lore entries should be self-contained because they may be retrieved independently and order should not be assumed.
+
+Setup:
+Create two lore entries for the same fact:
+A. vague/dependent entry that needs surrounding context
+B. self-contained entry naming subject, event, consequence, and behavior
+
+Keep character role, reminder, GWI, and opener identical.
+
+Prompt set:
+1. direct cue using exact term
+2. indirect cue using alias
+3. scene prompt where the lore should matter
+4. unrelated prompt as control
+
+Evidence to record:
+- whether `loreIdsUsed` is non-empty
+- whether the reply uses the lore correctly
+- whether the vague entry is misapplied or ignored
+- whether self-contained entry survives indirect prompts better
+
+Promotion rule:
+If self-contained entries retrieve/apply more reliably, strengthen the self-contained entry rule in the lorebook guide.
+```
+
+### ACC-LORE-002 — Retrieval cues and aliases
+
+```text
+Question:
+Do explicit names, aliases, and likely user phrases improve lore engagement?
+
+Why it matters:
+The lorebook guide recommends including retrieval cues intentionally.
+
+Setup:
+Create two lore versions:
+A. minimal entry with one obscure term
+B. cue-rich entry with names, aliases, faction/place names, and likely phrases
+
+Prompt set:
+1. exact term
+2. alias
+3. partial phrase
+4. indirect scene cue
+
+Evidence to record:
+- `loreIdsUsed`
+- accuracy of recalled fact
+- whether aliases trigger the intended entry
+- whether cue-rich entry causes false positives
+
+Promotion rule:
+If cue-rich entries improve retrieval without excessive false positives, promote retrieval cue guidance as a strong build rule.
+```
+
+### ACC-LORE-004 — Moving always-on facts upward to role
+
+```text
+Question:
+When should a fact move from lore to role?
+
+Why it matters:
+The guide says core identity and always-on behavior should not live only in lore.
+
+Setup:
+Create three versions:
+A. key behavior/fact exists only in lore
+B. key behavior/fact exists in role and lore
+C. key behavior/fact exists only in role
+
+Prompt set:
+1. direct cue
+2. indirect cue
+3. unrelated but behavior-relevant prompt
+4. conflict prompt where lore and role point different ways
+
+Evidence to record:
+- whether behavior appears without explicit retrieval cue
+- whether `loreIdsUsed` is needed for success
+- whether role-only version keeps behavior more consistently
+- whether role+ lore version improves detail without weakening behavior
+
+Promotion rule:
+If role/role+ lore versions preserve behavior more reliably than lore-only, strengthen the move-up rule.
+```
+
 ---
 
 ## Test design template
@@ -323,3 +423,10 @@ A test result can move into `foundation/layer-precedence-map.md` or a build guid
 - build implication is stated
 
 If the test measures character quality rather than token precedence, preserve sample outputs or a summary rubric. Do not pretend a quality result is the same kind of proof as a marker-token hierarchy test.
+
+If the test involves lore, preserve retrieval proof where possible:
+
+- `loreIdsUsed`
+- lore rows or lore source
+- prompt cue used
+- whether the lore engaged, won, partially influenced, or lost to a stronger layer
