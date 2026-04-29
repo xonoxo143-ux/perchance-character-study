@@ -2,6 +2,8 @@
 
 This is the main place to look for characters in the repo.
 
+The library is intentionally sparse until characters are actually imported, built, or promoted. Do not fill this table with lab notes unless they represent a character worth finding later.
+
 ## Status labels
 
 - **imported** — came from outside material or copied source.
@@ -45,3 +47,15 @@ Notes:
 If a character is mainly useful to play or inspect, it belongs in `library/`.
 
 If a character is mainly useful as evidence for a platform behavior test, it belongs in `source-material/` or `examples/` until promoted.
+
+If a character starts as an experiment but becomes reusable, move or copy it into `library/made/` and update this index.
+
+## Next library task
+
+When the project turns back to characters, the next useful library move is to index the currently imported/source characters under:
+
+```text
+library/imported/
+```
+
+Do not do that until the inherited/copied source material has been audited or intentionally selected.
