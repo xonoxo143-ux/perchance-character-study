@@ -18,6 +18,28 @@ Purpose: map Perchance ACC fields by practical behavior, best use, common misuse
 | Memory / summaries | Long-thread recall and compression | Assuming summaries are neutral or always present | Behavior changes after long chat; retrieval seems inconsistent | Check summary/memory fields in export |
 | Thread overrides | Per-thread role/reminder/user/system changes | Forgetting they exist | Base character seems to behave differently per thread | Inspect thread row overrides before diagnosing |
 
+## Documented authored-message mechanics
+
+Public role/reminder documentation describes advanced authored-message syntax inside role/instruction and reminder fields.
+
+Documented mechanics:
+
+- Plain role/instruction text is equivalent to a `[SYSTEM]: ...` role/instruction message.
+- Role/instruction can contain authored messages such as `[SYSTEM]:`, `[AI]:`, and `[USER]:`.
+- Reminder can also contain authored messages such as `[SYSTEM]:`, `[AI]:`, and `[USER]:`.
+- A reminder written as `[AI]: (Thought: ...)` is documented as a way to frame the reminder as the AI's own thought, reducing the chance that the AI replies to the reminder as if it were a normal message.
+- Instruction/reminder messages are not summarized as normal chat messages; initial messages can be summarized once the thread is long enough.
+
+Current repo status:
+
+```text
+Documented mechanic, not fully behavior-tested for precedence/parroting differences.
+```
+
+Implication:
+
+Use authored forms deliberately, but do not assume they change layer strength until tested.
+
 ## Build principle
 
 Each layer should have one job.
