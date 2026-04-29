@@ -42,21 +42,59 @@ Rule:
 
 > Salvaged material must be sorted into confirmed, provisional, untested, failed, or parked before becoming guidance.
 
-### Tier 3 — External references
+### Tier 3 — Dev-like public docs and intended mechanics
 
-These include public GitHub repos, Perchance docs, gists, SillyTavern importer behavior, Hugging Face packs, and other public examples.
+These include Perchance docs, Rentry guides, dev/community-maintained explanations, and public notes that describe how ACC fields are intended to work.
 
 Use Tier 3 sources for:
 
+- intended field semantics
+- documented commands
+- supported syntax
+- expected reload/update behavior
+- custom-code API examples
+
+Rule:
+
+> Public docs explain intended mechanics. They do not automatically prove observed behavior under conflict.
+
+### Tier 4 — External references and public examples
+
+These include public GitHub repos, gists, SillyTavern importer behavior, Hugging Face packs, public character cards, Reddit/Lemmy explanations, and other outside examples.
+
+Use Tier 4 sources for:
+
 - format comparison
-- import/export mechanics
 - tooling ideas
 - outside examples
 - compatibility notes
+- folk models and edge cases
+- future test candidates
 
 Rule:
 
 > External references are useful, but they do not outrank tested ACC behavior.
+
+## Online-doc comparison rule
+
+When public docs and local tests appear to disagree, classify the difference before changing guidance.
+
+Possible classifications:
+
+- intended mechanic versus observed behavior
+- normal use versus conflict test
+- fresh-thread versus existing-thread state
+- documented syntax versus untested behavior difference
+- community folk model versus export-backed evidence
+
+Main rule:
+
+```text
+Online docs explain what a feature is supposed to do.
+Local tests explain what happened when layers conflicted.
+```
+
+Use `docs/ONLINE_DOC_COMPARISON.md` for detailed comparisons.
 
 ## Confidence labels
 
@@ -77,6 +115,7 @@ Use these labels whenever possible:
 - Change one variable at a time when possible.
 - Label imported-thread versus fresh-thread confounds.
 - Do not promote a result to canon if startup/loading/runtime confounders remain.
+- Do not treat public examples as proof until reproduced in ACC.
 
 ## Interpretation rule
 
