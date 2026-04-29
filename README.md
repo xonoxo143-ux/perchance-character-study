@@ -17,6 +17,37 @@ Build a character
 → rebuild better
 ```
 
+## Front room and lab
+
+The repo has two major spaces:
+
+```text
+library/  = the front room: characters to inspect, sort, and use
+lab docs  = the back room: research, testing, evidence, templates, and build rules
+```
+
+Start in `library/character-index.md` when looking for characters.
+
+Use the lab folders when building, diagnosing, testing, or refining characters:
+
+- `foundation/`
+- `build-lane/`
+- `docs/`
+- `templates/`
+- `source-material/`
+
+## Character Library
+
+The Character Library is the human-facing catalog.
+
+It separates:
+
+- `library/imported/` — characters imported from outside sources or copied material
+- `library/made/` — characters built deliberately in this project
+- `library/experiments/` — unstable builds, prototypes, and test characters
+
+Every character should have an index entry explaining why it is here.
+
 ## Two equal lanes
 
 ### Build Lane
@@ -96,4 +127,4 @@ This repo began from a copied Perchance URL-to-character generator reference. Th
 source-material/external/copied-repo-readme.md
 ```
 
-The repo is now being restructured into a dual-purpose ACC character build and foundation lab.
+The repo is now being restructured into a dual-purpose ACC character build and foundation lab with a library front room.
