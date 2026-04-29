@@ -14,12 +14,35 @@ Purpose: preserve the traps that can make a character or test look broken when t
 - Slash-looking pushed messages being mistaken for real slash-command execution.
 - Site verification/browser gating during autonomous external testing.
 - Summary/memory state changing long-thread behavior.
+- Token budget / input crowding.
+- Community folk models that collapse all fields into “just one prompt.”
 
 ## Practical rule
 
 If a result looks surprisingly strong, check whether a hidden stronger layer or runtime effect could explain it.
 
 If a result looks surprisingly weak, check whether the layer being tested actually loaded or was retrieved.
+
+## Token budget / input crowding rule
+
+Public/community explanations correctly warn that role, reminder, GWI, lore, memory, summaries, initial messages, and recent chat can all compete inside the model's input context.
+
+This matters because a field can appear weak for more than one reason:
+
+- it may be lower priority
+- it may be crowded out
+- it may be contradicted by recent context
+- it may be summarized or stale
+- it may not have been retrieved
+- it may be present but too vague
+
+Important correction:
+
+```text
+Everything contributes to the input, but fields do not behave identically under conflict.
+```
+
+Do not reduce ACC behavior to “it is all just one prompt.” Our marker tests show field placement still matters.
 
 ## Fresh/import rule
 
