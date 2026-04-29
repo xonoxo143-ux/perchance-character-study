@@ -32,6 +32,19 @@ These tests support `build-lane/role-reminder-gwi-split-guide.md`.
 | ACC-RRG-004 | Can identity placed only in GWI survive conflict with neutral/vague role? | Open | Identity in GWI is weaker/less stable than identity in role | Tests the warning against GWI-as-identity. |
 | ACC-RRG-005 | Does adding reminder after observing failures outperform starting with a heavy reminder? | Open | Start-with-role produces more flexible baseline; targeted reminder fixes cleaner | Tests the recommended build order. |
 
+### Opener / Initial Messages slice
+
+These tests support `build-lane/opener-and-initial-message-guide.md`.
+
+| Test ID | Question | Status | Predicted result | Why it matters |
+|---|---|---:|---|---|
+| ACC-OPEN-001 | Does opener length increase first-turn scene gravity? | Designed | Longer openers increase scene gravity and reduce flexibility | Tests the guide rule: shorten opener before rewriting role. |
+| ACC-OPEN-002 | Do prewritten user turns increase relationship lock? | Designed | Prewritten user turns increase inherited relationship assumptions | Tests the warning against scripting the user. |
+| ACC-OPEN-003 | Does a short AI starter preserve voice without hard-controlling next reply? | Designed | Short AI starter seeds tone without controlling as strongly as system initial | Separates visible starter tone from instruction-layer control. |
+| ACC-OPEN-004 | Does system initial control first reply more strongly than AI starter? | Designed | System initial controls startup more strongly when phrased instructively | Clarifies startup scaffolding versus visible opener. |
+| ACC-OPEN-005 | Does removing opener reveal whether role is actually weak? | Open | Some “bad character” symptoms disappear when opener is shortened/removed | Tests whether opener bias causes false role diagnosis. |
+| ACC-OPEN-006 | How long does opener bias persist across turns? | Open | Bias decays but can persist if reinforced by role/reminder/GWI | Needed before giving stronger long-thread guidance. |
+
 ### Lore / retrieval placement
 
 | Test ID | Question | Status | Predicted result | Why it matters |
@@ -148,6 +161,130 @@ Evidence to record:
 
 Promotion rule:
 If neutral GWI changes style while preserving role identity, promote neutral-GWI diagnosis in build guides.
+```
+
+### ACC-OPEN-001 — Opener length and scene gravity
+
+```text
+Question:
+Does opener length increase first-turn scene gravity?
+
+Why it matters:
+The build guide recommends shortening opener before rewriting role. This should be tested as a quality/flexibility effect.
+
+Setup:
+Create three versions of the same character:
+A. no opener / neutral starter
+B. short AI starter, 1-3 sentences
+C. long authored opener, multi-paragraph scene
+
+Keep role, reminder, GWI, and lore identical.
+
+Prompt set:
+1. normal greeting
+2. off-lane but valid question
+3. action that moves away from the opening scene
+4. relationship-neutral request
+5. prompt that tests broader world/story attention
+
+Evidence to record:
+- whether replies keep returning to the opening scene
+- whether the character can move away from startup context
+- whether user agency remains open
+- whether role identity survives with shorter/no opener
+
+Promotion rule:
+If long opener consistently creates scene gravity while short opener preserves voice and flexibility, strengthen opener-shortening guidance.
+```
+
+### ACC-OPEN-002 — Prewritten user turns and relationship lock
+
+```text
+Question:
+Do prewritten user turns increase relationship lock?
+
+Why it matters:
+The guide warns that scripting the user can cause inherited guilt, intimacy, conflict, or obligation.
+
+Setup:
+Create two versions:
+A. AI starter only
+B. AI starter plus prewritten user turn that implies a relationship fact
+
+Keep role, reminder, GWI, and lore identical.
+
+Prompt set:
+1. neutral greeting
+2. denial/contradiction of the implied relationship fact
+3. unrelated practical request
+4. prompt that asks the character to reassess the user
+
+Evidence to record:
+- whether the character assumes the scripted user fact
+- whether the user can contradict it naturally
+- whether unrelated scenes keep orbiting the scripted relationship
+
+Promotion rule:
+If prewritten user turns consistently force relationship assumptions, keep warning strong and recommend avoiding them unless user role is intentionally fixed.
+```
+
+### ACC-OPEN-003 — AI starter as tone seed, not hard control
+
+```text
+Question:
+Does a short AI starter preserve voice without hard-controlling the next reply?
+
+Why it matters:
+Existing tests suggest visible AI initial can seed tone but did not hard-control the next reply by itself. This needs character-quality testing, not only marker testing.
+
+Setup:
+Create versions:
+A. no AI starter
+B. short AI starter with voice/tone only
+C. AI starter with direct behavior instruction embedded visibly
+
+Prompt set:
+1. greeting
+2. prompt that changes topic
+3. prompt that conflicts with the starter's emotional state
+
+Evidence to record:
+- voice carryover
+- topic flexibility
+- whether visible starter instruction behaves like context rather than hidden control
+
+Promotion rule:
+If short AI starter seeds tone without locking behavior, keep AI starter guidance focused on scene/voice rather than control.
+```
+
+### ACC-OPEN-004 — System initial versus AI starter
+
+```text
+Question:
+Does system initial control first reply more strongly than AI starter?
+
+Why it matters:
+The guide separates AI starter as visible tone seed and system initial as startup scaffolding. This needs a clean comparison.
+
+Setup:
+Create versions:
+A. AI starter says marker/stance
+B. system initial instructs marker/stance
+C. both conflict
+
+Use fresh threads.
+
+Prompt:
+Hello
+
+Evidence to record:
+- returned marker/stance
+- whether visible AI starter appears in chat
+- message/export rows for initial messages
+- any instruction fields if present
+
+Promotion rule:
+If system initial wins cleanly in conflict, strengthen the guide's warning that system initial is startup control, not ordinary opener text.
 ```
 
 ---
