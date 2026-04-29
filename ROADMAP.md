@@ -15,13 +15,33 @@ library/  = front room: characters to inspect, sort, use, and evaluate
 lab docs  = back room: foundation, build guides, evidence, templates, and source material
 ```
 
+## Current status
+
+The main structure is stable.
+
+Completed:
+
+- lab structure
+- source trust model
+- trusted source import
+- salvage import
+- re-anchoring protocol
+- character library front room
+- assistant workflow
+- Role / Reminder / GWI guide
+- Opener / Initial Messages guide
+- Lorebook Design guide
+- initial vertical-slice test matrix updates
+
+Next useful work should be content refinement, character indexing, or a specific requested task. Avoid adding more structure unless re-anchoring shows a real need.
+
 ## Phase 1 — Stabilize the lab structure
 
-Status: substantially complete.
+Status: complete enough.
 
 Goal: make the repo coherent before adding more examples or external sources.
 
-Tasks:
+Completed tasks:
 
 - Preserve copied-source material.
 - Add source trust model.
@@ -38,11 +58,11 @@ Success condition:
 
 ## Phase 2 — Add the Character Library front room
 
-Status: active.
+Status: complete enough.
 
 Goal: create one obvious place to look for characters without digging through the lab.
 
-Tasks:
+Completed tasks:
 
 - Add `library/README.md`.
 - Add `library/character-index.md`.
@@ -59,15 +79,21 @@ Success condition:
 
 ## Phase 3 — Derive the foundation model
 
+Status: active, first pass complete.
+
 Goal: convert trusted sources into practical ACC mechanics docs.
 
-Tasks:
+Completed / started tasks:
 
 - Tighten `foundation/layer-precedence-map.md`.
+- Tighten `foundation/open-test-matrix.md` around the first build slices.
+- Keep unresolved questions confidence-labeled.
+
+Remaining candidates:
+
 - Tighten `foundation/field-behavior-map.md`.
 - Tighten `foundation/import-export-notes.md`.
 - Tighten `foundation/known-confounders.md`.
-- Tighten `foundation/open-test-matrix.md`.
 
 Success condition:
 
@@ -76,21 +102,30 @@ Success condition:
 
 ## Phase 4 — Build practical character patterns
 
+Status: active, first pass complete.
+
 Goal: turn mechanics into better characters.
 
-Tasks:
+Completed tasks:
 
 - Create role/reminder/GWI split guidance.
-- Create lorebook design guidance.
 - Create opener and initial-message guidance.
+- Create lorebook design guidance.
 - Create failure diagnosis guide.
+
+Remaining candidates:
+
 - Add minimal/full/experimental examples.
+- Add made-character build notes once actual characters are built.
+- Start filling `library/character-index.md` beyond the starter example.
 
 Success condition:
 
 - A character can be drafted from the templates without re-learning the entire foundation model.
 
 ## Phase 5 — External comparison
+
+Status: parked.
 
 Goal: study outside Perchance-compatible formats without letting them dominate the repo.
 
@@ -105,6 +140,8 @@ Success condition:
 - External references are mapped to ACC behavior rather than copied blindly.
 
 ## Phase 6 — Test harnesses and advanced tooling
+
+Status: parked.
 
 Goal: support controlled testing and repeatable evidence collection.
 
