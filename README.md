@@ -47,6 +47,23 @@ Use it when asking:
 - What test would settle this?
 - Is this character bad, or is a hidden ACC layer overpowering it?
 
+## Re-anchoring rule
+
+After a major merge, source import, failed test, surprising result, or scope mutation, pause and re-anchor before adding more structure.
+
+Re-anchoring asks:
+
+```text
+What is the repo trying to do now?
+What changed?
+What evidence supports the change?
+What risks did the change introduce?
+What should not be touched yet?
+What is the next smallest useful move?
+```
+
+Detailed protocol: `docs/RE_ANCHORING_PROTOCOL.md`.
+
 ## Source trust model
 
 This repo separates source material from conclusions.
