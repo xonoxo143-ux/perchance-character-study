@@ -1,6 +1,6 @@
 # Character Library
 
-This is the front room of the repo: the place to look for characters.
+This is the front room of the repo: the place to look for **favorites**.
 
 The rest of the repo is the lab. The library should stay readable, navigable, and useful without requiring the reader to understand every ACC test or source note.
 
@@ -12,7 +12,17 @@ Start here:
 library/character-index.md
 ```
 
-The index tracks character names, source, status, purpose, quality, and notes.
+The index tracks favorite/indexed character names, source, status, purpose, quality, and notes.
+
+## Working terms
+
+Use these terms consistently:
+
+- **favorites** — characters intentionally indexed in `library/character-index.md` or placed under `library/`.
+- **source** — copied/forked/imported raw material that may contain characters but has not been selected or indexed yet.
+- **other** — unclassified material that may be useful later but is not currently part of the favorite library.
+
+A character can exist in source/other without being a favorite.
 
 ## Sections
 
@@ -38,4 +48,4 @@ Use this for characters that teach us something but are not ready to be treated 
 
 Do not turn the library into a dump.
 
-Every character should have an index entry explaining why it is here.
+Every favorite should have an index entry explaining why it is here.
