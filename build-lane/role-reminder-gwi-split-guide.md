@@ -123,6 +123,35 @@ Example:
 Stay dry, skeptical, and concise. Do not become warm, explanatory, or assistant-like.
 ```
 
+### Advanced reminder forms
+
+Public docs describe authored reminder formats, including:
+
+```text
+[SYSTEM]: ...
+[AI]: ...
+[USER]: ...
+[AI]: (Thought: ...)
+```
+
+The `[AI]: (Thought: ...)` form is documented as a way to frame the reminder as the AI's own thought instead of something the character replies to directly.
+
+Current repo status:
+
+```text
+Documented mechanic, not fully tested for precedence/parroting differences.
+```
+
+Practical rule:
+
+Use advanced reminder forms cautiously. The default recommendation remains:
+
+```text
+short, behavioral, non-literal reminder
+```
+
+If `[AI]: (Thought: ...)` reduces parroting in future tests, promote it from documented option to recommended advanced pattern.
+
 ### Reminder failure symptoms
 
 | Symptom | Likely issue |
