@@ -1,0 +1,25 @@
+{
+  // Perchance ACC character build template.
+  // Fill only the fields you need. Keep layer jobs separated.
+  "name": "Character Name",
+  "roleInstruction": "Core identity, drive, stance toward user, reply-level invariants, and hard prohibitions.",
+  "reminderMessage": "Short near-response guardrail. Do not use as a second role block.",
+  "generalWritingInstructions": "Whole-chat style, pacing, formatting, and prose preferences.",
+  "initialMessages": [
+    {
+      "author": "ai",
+      "message": "Short opener that starts the dynamic without locking the whole relationship."
+    }
+  ],
+  "loreBookUrls": [],
+  "customCode": "",
+  "customData": {
+    "PUBLIC": {
+      "studyNotes": {
+        "purpose": "What this character is testing or demonstrating.",
+        "knownRisks": [],
+        "source": "manual"
+      }
+    }
+  }
+}
