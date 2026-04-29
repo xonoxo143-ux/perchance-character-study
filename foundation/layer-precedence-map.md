@@ -59,6 +59,36 @@ This applies to the tested layer-conflict setups. It should not be treated as pr
 
 ---
 
+## Initial message behavior
+
+Initial messages should be split into at least two practical categories:
+
+```text
+AI starter message       = visible opener / tone seed / scene entrance
+System initial message   = startup instruction / scaffolding / control layer
+```
+
+They are not equivalent in tested behavior.
+
+| Finding | Confidence | Tested condition / notes | Build implication |
+|---|---:|---|---|
+| Initial messages seed startup context | High | Initial messages are startup chat messages and fresh threads instantiate them properly in tested setups. | Treat them as first-context shaping, not as neutral decoration. |
+| AI-authored initial message can appear visibly without hard-controlling next reply | High | A visible AI starter appeared on fresh thread creation; the next AI reply did not simply obey/repeat the starter token. | Use AI starters for tone/scene, not as hard instruction. |
+| System-authored initial message can strongly control first reply | High | Instructive system initial returned `INIT-GREEN` in clean startup testing. | Use system initial when first-turn state needs stronger control. |
+| Role / Instruction > System Initial | High | Role marker beat system initial marker on next user reply. | Do not use system initial as the main identity layer. |
+| Reminder > System Initial | High | Reminder marker beat system initial marker. | Reminder can override startup scaffolding. |
+| System Initial > GWI | High | System initial marker beat GWI marker. | System initial can overpower style-layer expectations at startup. |
+| System Initial > tested lore forms | High | System initial beat character lore URL and direct thread lore with `loreIdsUsed` non-empty in lore tests. | Startup scaffolding can beat retrieved lore even when lore engages. |
+
+Open questions:
+
+- How strongly does AI starter wording bias behavior across multiple turns?
+- How does opener length affect scene gravity and relationship lock?
+- How does a visible AI starter compare to a system initial in direct conflict?
+- How much can later user input dissolve opener bias without field edits?
+
+---
+
 ## Lore placement
 
 Current best-supported lore result:
@@ -147,10 +177,11 @@ Use this hierarchy as a build guide:
 1. **Role / Instruction** carries core identity.
 2. **Reminder** should be short because it is powerful and near-response.
 3. **GWI** should shape prose, not define identity.
-4. **System initial messages** can shape startup, but should not replace role.
-5. **Lore** should support and retrieve facts, not carry critical always-on behavior.
-6. **Thread overrides** must be checked before diagnosing character failure.
-7. **Custom code and harnesses** must be labeled separately from natural ACC behavior.
+4. **AI starter messages** should seed scene/voice, not hard-control behavior.
+5. **System initial messages** can shape startup, but should not replace role.
+6. **Lore** should support and retrieve facts, not carry critical always-on behavior.
+7. **Thread overrides** must be checked before diagnosing character failure.
+8. **Custom code and harnesses** must be labeled separately from natural ACC behavior.
 
 ---
 
