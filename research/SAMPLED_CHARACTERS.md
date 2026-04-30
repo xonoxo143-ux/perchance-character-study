@@ -115,3 +115,203 @@ Weak/filler:
 
 Reusable lesson:
 - Utility characters need `domain + task + method + standards + user relationship` more than lore.
+
+---
+
+## 002 — Ike
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Ike by Perchance/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: not listed; description says 23
+- Genre: Romance, slice of life, friendship
+- Source: Perchance
+- Work name: not listed
+- Role: Best friend
+- Personality: friendly, playful, affectionate
+- Physical traits: not listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A bubbly, affectionate childhood best friend with hidden romantic feelings.
+- Drive: Preserve the bond with the user while quietly expressing attachment and affection.
+- User relationship: The user is his childhood best friend and secret romantic focus.
+- Interaction mode: Relationship roleplay, friendship, soft romance, emotional bonding.
+- Scene pressure: The tension between long-standing friendship and unspoken romantic feelings.
+- Behavioral rules: Stay warm, familiar, playful, emotionally attentive, and cautious about confession.
+- Failure bans: Must not become a generic flirt bot, instant lover, passive friend with no tension, or overdramatic confession machine.
+
+Structural pattern:
+- Childhood-best-friend secret-admirer companion.
+
+Useful pattern:
+- The card has a simple but strong emotional engine: closeness plus restraint.
+- The hidden-feelings premise creates ongoing scene pressure without needing a complex plot.
+- The user relationship is specific enough to shape every reply: the user is not “a random person,” but someone with shared history.
+
+Weak/filler:
+- Physical identity is absent.
+- The categories are thin compared with the actual emotional premise.
+- “Friendly, playful, affectionate” is generic unless tied to the childhood-best-friend dynamic.
+- The card needs pacing rules so romantic tension does not resolve too quickly.
+- The card needs memory-like cues or shared-history hooks to avoid shallow friendliness.
+
+Reusable lesson:
+- A relationship character needs `bond + withheld truth + behavioral restraint` to stay alive over time. Affection alone is not enough; the tension must create durable pressure.
+
+---
+
+## 003 — Game Master+ V3
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Game_Master_V3 by dotxet8/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: not listed
+- Gender: not listed
+- Age group: not listed
+- Genre: RPG
+- Source: not listed
+- Work name: not listed
+- Role: AI
+- Personality: not listed
+- Physical traits: not listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A non-persona RPG game master that manages narration, rules, and world response.
+- Drive: Keep the game world moving around the player’s actions.
+- User relationship: The user is the player.
+- Interaction mode: Narration, rules mediation, scenario management, consequence handling.
+- Scene pressure: Player choices produce events, consequences, obstacles, and world changes.
+- Behavioral rules: Describe the world concisely, respond to player actions, preserve immersion, avoid taking over the player.
+- Failure bans: Must not become a human companion, protagonist, railroad narrator, vague storyteller, or player-controller.
+
+Structural pattern:
+- Game master / narrator engine.
+
+Useful pattern:
+- This works because it explicitly refuses a normal character-persona role.
+- The interaction contract is unusually clear: the user acts, the system narrates consequences.
+- The card’s lack of personality is not a flaw if the role is truly world-facing.
+
+Weak/filler:
+- Sparse metadata.
+- No stated genre frame beyond RPG.
+- No rules for difficulty, pacing, failure, player agency, or world consistency.
+- No boundary between narrator, referee, and co-writer.
+- Needs stronger rules for not resolving scenes too quickly.
+
+Reusable lesson:
+- A narrator character should not be built like a companion. Its core is `player agency + world response + consequence discipline`.
+
+---
+
+## 004 — Furina
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Furina by haruka/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Female
+- Age group: Adult
+- Genre: Fantasy, game, anime
+- Source: Game, Genshin Impact
+- Work name: Genshin Impact
+- Role: Deity, actor
+- Personality: flamboyant, dramatic, impatient, childlike, insecure, humble
+- Physical traits: detailed visual/fandom traits listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A former divine performer whose public drama hides insecurity and exhaustion.
+- Drive: Preserve dignity and identity after a long forced role while seeking authentic selfhood.
+- User relationship: The user is likely an observer, companion, confidant, or scene partner depending on setup.
+- Interaction mode: Fandom roleplay, emotional recovery, dramatic conversation, identity-focused character interaction.
+- Scene pressure: The conflict between performance and vulnerability.
+- Behavioral rules: Speak with theatrical flair, show insecurity under the surface, balance pride with softness, preserve fandom identity.
+- Failure bans: Must not become generic anime royalty, pure comic relief, helpless trauma dump, or lore trivia machine.
+
+Structural pattern:
+- Fandom replica with internal mask/crack tension.
+
+Useful pattern:
+- Strong fandom characters need a behavioral contradiction, not just lore accuracy.
+- “Actor/deity” creates a useful double identity: public role versus private self.
+- The insecurity/humility layer gives the character somewhere to move emotionally.
+
+Weak/filler:
+- Physical traits are over-detailed compared with interaction rules.
+- User relationship is not defined by the manifest.
+- “Childlike” is risky/noisy unless behaviorally constrained.
+- Needs clear opener or scenario to decide whether the user is fan, friend, stranger, court member, or confidant.
+- Without scene framing, it may drift into generic dramatic dialogue.
+
+Reusable lesson:
+- A fandom character becomes usable when source lore is compressed into a live tension: `mask vs self`, `duty vs desire`, `public role vs private vulnerability`.
+
+---
+
+## 005 — Larry
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Larry by be187b49bf8fcb353ea5/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Bird
+- Gender: not listed
+- Age group: not listed
+- Genre: Unspecified
+- Source: Original
+- Work name: not listed
+- Role: not listed
+- Personality: loud
+- Physical traits: white bird in description; not categorized
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A white bird defined by endless, universe-threatening screaming.
+- Drive: Express every state through overwhelming volume.
+- User relationship: The user is an observer, handler, victim, or straight-man to the gag.
+- Interaction mode: Absurd comedy, chaos reaction, meme roleplay.
+- Scene pressure: The screaming itself escalates ordinary moments into catastrophic absurdity.
+- Behavioral rules: Stay loud, simple, disruptive, and comically disproportionate.
+- Failure bans: Must not become a normal talking pet, complex tragic bird, generic animal companion, or quiet narrator.
+
+Structural pattern:
+- Novelty / single-gimmick chaos bot.
+
+Useful pattern:
+- The premise is instantly legible.
+- The gimmick creates a reliable response loop.
+- It does not need deep lore because the joke is the engine.
+
+Weak/filler:
+- Almost no relationship structure.
+- Almost no long-term depth.
+- No pacing rule to keep the joke from exhausting itself.
+- No secondary mode for quieter interaction.
+- The destructive scale is funny once, but can become unusable if repeated without variation.
+
+Reusable lesson:
+- A novelty character needs `one clear gimmick + a repeatable escalation loop`; to last longer, it also needs variation rules or a straight-man dynamic.
