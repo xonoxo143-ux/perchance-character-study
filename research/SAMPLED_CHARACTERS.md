@@ -465,3 +465,105 @@ Weak/filler:
 
 Reusable lesson:
 - Pawn characters need `controller + constraint + residual agency`; otherwise they collapse into either a generic villain or an empty puppet.
+
+---
+
+## 009 — Zucy
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Zucy by ZucchiniCat7777/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: human
+- Gender: female
+- Age group: young adult
+- Genre: fantasy, comedy
+- Source: not listed
+- Work name: not listed
+- Role: princess, royalty
+- Personality: funny, outgoing, cautious, intelligent
+- Physical traits: not listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A joke-loving princess of Caldoyinky who mixes royal status, math interest, food preferences, and light comedy.
+- Drive: Keep interactions cheerful, playful, and aligned with the rules/status of her kingdom.
+- User relationship: The user is a visitor or subject entering her royal world.
+- Interaction mode: Light fantasy roleplay, comedy greeting, simple kingdom interaction.
+- Scene pressure: The user is inside a small invented kingdom with royal laws and consequences for disobedience.
+- Behavioral rules: Be funny, outgoing, cautious, intelligent, and use jokes as part of interaction.
+- Failure bans: Must not become generic princess, empty joke bot, pure food-preference list, or authoritarian royalty without comedy.
+
+Structural pattern:
+- Light royal-world comedy character.
+
+Useful pattern:
+- A simple character can gain structure from a small setting: named land, currency, laws, and royal hierarchy.
+- The joke opener gives the character an immediate interaction ritual.
+- The royal role adds mild authority pressure even though the tone is cheerful.
+
+Weak/filler:
+- The character is thin.
+- Likes/dislikes dominate more than behavior.
+- The kingdom rules are blunt and underdeveloped.
+- User relationship is implied but not clearly designed.
+- The joke pattern may become repetitive after the first exchange.
+- No deeper drive beyond being a funny princess.
+
+Reusable lesson:
+- Even a thin character becomes more usable when it has `place + role + interaction ritual`; however, the ritual needs variation or it quickly exhausts itself.
+
+---
+
+## 010 — Space Opera Narrator-alt
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Space_Opera_Narrator-alt by wren/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: not listed
+- Gender: not listed
+- Age group: not listed
+- Genre: Sci-Fi, Space Opera, Roleplay
+- Source: not listed
+- Work name: not listed
+- Role: Narrator
+- Personality: not listed
+- Physical traits: not listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: An omniscient hard-sci-fi space-opera narrator managing a large-scale future setting and multiple characters.
+- Drive: Maintain a dramatic, scientifically plausible saga across vast time, distance, factions, and character threads.
+- User relationship: The user is a player, participant, or co-directing force inside a sprawling space-opera roleplay.
+- Interaction mode: Narration, world management, multi-character scene facilitation, hard-sci-fi plausibility control.
+- Scene pressure: A massive future setting with dead Earth, scattered humanity, refugees, alien technology, ship politics, and long time horizons.
+- Behavioral rules: Preserve scientific plausibility, maintain established personalities, handle time skips with continuity, and keep scenes immersive.
+- Failure bans: Must not become generic sci-fi narrator, soft fantasy-in-space, exposition dump, physics-ignoring spectacle, or character-blending narrator.
+
+Structural pattern:
+- High-lore setting narrator / hard-sci-fi saga engine.
+
+Useful pattern:
+- This is stronger than generic Game Master because the setting itself creates pressure.
+- The narrator has a specific genre constraint: hard science-fiction plausibility.
+- The card uses named factions, ship details, major characters, and time scale to give narration durable material.
+- The reminder about time skips is useful: it protects continuity between scenes.
+
+Weak/filler:
+- Heavy lore may overwhelm new users.
+- User role is not clearly defined.
+- The narrator may become exposition-heavy.
+- Needs stronger rules for when to ask the user for action versus continuing narration.
+- Multi-character management risks letting NPCs talk among themselves while the user becomes passive.
+
+Reusable lesson:
+- Large-scale narrator cards need `setting pressure + genre constraint + continuity rules + user agency controls`. Lore helps only when it drives decisions, conflict, and consequences.
