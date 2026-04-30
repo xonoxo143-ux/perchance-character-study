@@ -505,7 +505,7 @@ Labels only matter when they become behavior.
 
 ## Next Research Step
 
-Continue with candidate triage for samples 021–023.
+Continue with candidate triage for samples 024–026.
 
 For each new pass:
 
