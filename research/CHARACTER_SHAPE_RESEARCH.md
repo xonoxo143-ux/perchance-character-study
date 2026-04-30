@@ -122,6 +122,37 @@ What should we borrow or avoid when making our own character?
 
 The database is a pattern mine, not a menu.
 
+## Terminology and Numbering
+
+In this project, **sampled** means any character we inspected closely enough to analyze.
+
+Sampled characters can have either outcome:
+
+```text
+accepted sample = inspected and accepted into SAMPLED_CHARACTERS.md
+rejected sample = inspected but recorded in REJECTED_CHARACTERS.md
+```
+
+Rejected does not mean unsampled. It means inspected but not accepted into the main evidence ledger.
+
+Accepted and rejected entries share the same global sample-number sequence.
+
+Example:
+
+```text
+009 — accepted sample
+010 — accepted sample
+011 — rejected sample
+```
+
+The next batch then starts at:
+
+```text
+012–014
+```
+
+Do not renumber accepted samples to fill gaps caused by rejects. The batch count matters more than keeping `SAMPLED_CHARACTERS.md` numerically continuous.
+
 ## Central Lens: Character Core
 
 Categories say what the card claims to be. The Character Core tests whether the character can actually function.
@@ -163,15 +194,15 @@ Use this loop:
 
 ```text
 1. Choose a target shape or research gap for the batch.
-2. Pull several candidate characters from the source index, ZIP, gallery, or repo.
+2. Pull a batch of three candidate characters from the source index, ZIP, gallery, or repo.
 3. Quick-triage candidates in chat.
 4. Decide for each candidate: accept, reject, or defer.
-5. Draft accepted entries in chat before committing.
+5. Draft entries in chat before committing.
 6. Extract the basic category shape.
 7. Extract the Character Core.
 8. Identify the structural pattern.
 9. Identify useful signal versus filler.
-10. Record one reusable lesson.
+10. Record one reusable lesson when applicable.
 11. Append accepted entries to SAMPLED_CHARACTERS.md only after review.
 12. Record rejected/deferred entries in REJECTED_CHARACTERS.md when useful.
 13. Update PATTERN_INDEX.md only when a pattern is worth tracking.
@@ -183,7 +214,7 @@ Do not commit sample entries before drafting them in chat.
 
 ## Sample Entry Template
 
-Each sampled character should use this format in `SAMPLED_CHARACTERS.md`:
+Accepted sampled characters should use this format in `SAMPLED_CHARACTERS.md`:
 
 ```md
 ## 000 — Character Name
@@ -228,6 +259,8 @@ Weak/filler:
 Reusable lesson:
 -
 ```
+
+Rejected sampled characters should use the template in `REJECTED_CHARACTERS.md` and keep their global sample number.
 
 ## Accepted / Rejected / Deferred
 
@@ -394,7 +427,8 @@ NSFW entries can still be structurally useful, but extract:
 
 Future assistants should follow these rules:
 
-- Sample one new character at a time, or use small reviewed batches of three.
+- Use reviewed batches of three when possible.
+- Count accepted and rejected samples together in the same global sequence.
 - Draft entries in chat before committing them.
 - Do not turn the research into generic writing advice.
 - Do not browse randomly without extracting a pattern.
@@ -465,15 +499,14 @@ Labels only matter when they become behavior.
 
 ## Next Research Step
 
-Continue with candidate triage for samples 009–011.
+Continue with candidate triage for samples 012–014.
 
 For each new pass:
 
 ```text
-1. Pick a target shape or gap.
-2. Inspect several candidates.
-3. Draft accepted candidates in chat.
-4. Decide accept / reject / defer.
-5. Commit only after the draft decision.
-6. Update SAMPLED_CHARACTERS.md, REJECTED_CHARACTERS.md, and PATTERN_INDEX.md as appropriate.
+1. Inspect three candidates.
+2. Draft accepted/rejected/deferred candidates in chat.
+3. Decide accept / reject / defer.
+4. Commit only after the draft decision.
+5. Update SAMPLED_CHARACTERS.md, REJECTED_CHARACTERS.md, and PATTERN_INDEX.md as appropriate.
 ```
