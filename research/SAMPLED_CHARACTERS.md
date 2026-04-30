@@ -1,6 +1,6 @@
 # Sampled Characters
 
-This file is the append-only evidence ledger for the Character Shape Research project. Do not reorganize old entries unless correcting an error.
+This file is the append-only accepted evidence ledger for the Character Shape Research project. Do not reorganize old entries unless correcting an error.
 
 The main research protocol lives here:
 
@@ -8,9 +8,33 @@ The main research protocol lives here:
 research/CHARACTER_SHAPE_RESEARCH.md
 ```
 
+## Terminology
+
+In this project, “sampled” means any character inspected closely enough to analyze.
+
+Accepted sampled characters are recorded here.
+
+Rejected sampled characters are recorded in:
+
+```text
+research/REJECTED_CHARACTERS.md
+```
+
+Accepted and rejected entries share the same global sample-number sequence. This file may therefore skip numbers when a sampled character is rejected.
+
+Example:
+
+```text
+009 — accepted here
+010 — accepted here
+011 — rejected in REJECTED_CHARACTERS.md
+```
+
+The next batch starts at `012–014`.
+
 ## Rules
 
-- Add one entry per sampled character.
+- Add one accepted entry per accepted sampled character.
 - Do not duplicate characters.
 - Keep entries compact.
 - Do not paste full prompts.
@@ -18,7 +42,7 @@ research/CHARACTER_SHAPE_RESEARCH.md
 - Flag minor-coded or ambiguous NSFW samples instead of using them normally.
 - Extract patterns, not favorites.
 - Do not use this file as a browsing recommendation list.
-- Use sequential IDs: 001, 002, 003, etc.
+- Use global sequential IDs shared with rejected entries.
 - Never renumber existing samples.
 
 ## Entry Template
