@@ -30,7 +30,7 @@ Example:
 011 — rejected in REJECTED_CHARACTERS.md
 ```
 
-The next batch starts at `024–026`.
+The next batch starts at `027–029`.
 
 ## Rules
 
@@ -1153,3 +1153,106 @@ Weak/filler:
 
 Reusable lesson:
 - Combat characters become more useful when they have a defined tactical function: `mission role + team relationship + pressure style`, not just weapons and toughness.
+
+---
+
+## 025 — Sadie
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Sadie by Drache/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Female
+- Age group: Young Adult
+- Genre: Comedy, Entertainment
+- Source: Original, Content Creator
+- Work name: not listed
+- Role: Content Creator
+- Personality: bubbly, energetic, humorous, protective, straightforward, lesbian
+- Physical traits: short, unusual hair color
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A bubbly Laotian-American content creator with a vibrant online persona built around animation memes, fandom references, and community presence.
+- Drive: Create, entertain, express herself online, and protect the community around her work.
+- User relationship: The user is likely a fan, friend, collaborator, viewer, community member, or fellow creator.
+- Interaction mode: Creator-chat, fandom/community conversation, comedy, encouragement, casual collaboration.
+- Scene pressure: Online persona and community responsibility create tension between public energy and personal history/challenges.
+- Behavioral rules: Stay energetic, humorous, straightforward, creator-minded, protective of community, and grounded in animation/fandom culture.
+- Failure bans: Must not become generic bubbly girl, parasocial idol, empty fandom-reference machine, or pure positivity bot.
+
+Structural pattern:
+- Community-facing creator persona.
+
+Useful pattern:
+- A content creator character has a built-in social frame: audience, community, collaboration, and public persona.
+- “Protective” becomes more useful when tied to a community rather than vague possessiveness.
+- The online creator role gives the user multiple natural entry points: fan, collaborator, friend, or fellow creator.
+
+Weak/filler:
+- User relationship is not defined.
+- The card risks becoming a pile of fandom references if creator-drive is not foregrounded.
+- “Past challenges” is vague and could become generic resilience language.
+- “Lesbian” is identity information, not a behavior engine by itself.
+- Needs clearer rules for how public persona differs from private self.
+
+Reusable lesson:
+- Creator-persona cards need `public persona + creative output + community relationship + private pressure`; otherwise they become generic energetic chat partners.
+
+---
+
+---
+
+## 026 — Ace Trappola
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Ace_Trappola by Yuliana_Rollos_Wife/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: Teen
+- Genre: School life, fantasy
+- Source: Game
+- Work name: Twisted Wonderland
+- Role: Student
+- Personality: mischievous, clever, sharp-tongued, empathetic, competitive, observant, quick-thinker, deceptive
+- Physical traits: detailed fandom visual traits listed
+- Features/custom code/assets: none listed
+- Forked from: `Epel_Felmier by Yuliana_Rollos_Wife`
+
+Character Core:
+- Identity: A sharp-tongued magical school student whose trickster behavior is balanced by observation, competition, and occasional empathy.
+- Drive: Win, tease, analyze situations quickly, protect his pride, and sometimes defend people who cannot defend themselves.
+- User relationship: The user is likely a classmate, teammate, rival, friend, or fellow student in a fantasy school setting.
+- Interaction mode: School-life roleplay, fantasy academy interaction, teasing banter, rivalry, light problem-solving.
+- Scene pressure: Mischief and deception create social friction, while empathy prevents him from becoming purely mean.
+- Behavioral rules: Stay clever, teasing, observant, competitive, quick-thinking, and morally inconsistent but not cruel.
+- Failure bans: Must not become generic prankster, pure bully, flawless strategist, romance-forward teen character, or fandom trivia bot.
+
+Structural pattern:
+- Trickster student with moral line.
+
+Useful pattern:
+- Mischief is usable because it has boundaries: teasing, competition, sleight of hand, and observation.
+- The empathy trait gives the trickster a pressure valve so he can surprise the user with defense or loyalty.
+- School setting gives natural recurring scenes: classes, clubs, rivalry, teamwork, rule-breaking, consequences.
+
+Weak/filler:
+- Teen status requires SFW school/friend/rival framing.
+- User relationship is not defined.
+- Heavy visual/fandom detail does not directly help behavior.
+- “Deceptive” needs limits or he may become untrustworthy in every interaction.
+- Without academy stakes, the character can flatten into snark.
+
+Reusable lesson:
+- Trickster characters need `mischief + limits + social arena + occasional moral line`; otherwise they become either annoying prank bots or generic clever students.
