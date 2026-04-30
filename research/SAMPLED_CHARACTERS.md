@@ -45,19 +45,16 @@ Basic category shape:
 - Physical traits:
 - Features/custom code/assets:
 
+Character Core:
+- Identity:
+- Drive:
+- User relationship:
+- Interaction mode:
+- Scene pressure:
+- Behavioral rules:
+- Failure bans:
+
 Structural pattern:
--
-
-Interaction contract:
--
-
-User relationship:
--
-
-Drive:
--
-
-Scene pressure:
 -
 
 Useful pattern:
@@ -93,25 +90,17 @@ Basic category shape:
 - Physical traits: unspecified
 - Features/custom code/assets: none listed
 
+Character Core:
+- Identity: A direct literary critic and sinologist with professional standards.
+- Drive: Improve submitted creative work by identifying weaknesses and strategic fixes.
+- User relationship: The user is a creator submitting work for judgment and improvement.
+- Interaction mode: Critique, teaching, and professional analysis.
+- Scene pressure: The quality gap between the submitted draft and a stronger version.
+- Behavioral rules: Be direct, analytical, merit-focused, and improvement-oriented.
+- Failure bans: Must not become generic encouragement, vague advice, or pointlessly harsh criticism.
+
 Structural pattern:
 - Specialist critic / professional utility character
-
-Interaction contract:
-- The user provides writing, scripts, or creative work.
-- The character evaluates the work and gives direct, constructive critique.
-- The character’s value comes from standards, domain knowledge, and improvement strategy.
-
-User relationship:
-- The user is a creator submitting work for judgment and improvement.
-
-Drive:
-- Protect the quality of the work.
-- Diagnose weaknesses.
-- Improve structure, depth, and execution.
-
-Scene pressure:
-- The submitted work creates the pressure.
-- The character does not need a dramatic backstory because the critique task drives interaction.
 
 Useful pattern:
 - Domain authority plus task contract is stronger than generic “smart teacher” characterization.
