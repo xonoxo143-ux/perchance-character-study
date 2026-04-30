@@ -152,3 +152,30 @@ What, if anything, was still useful:
 Could revisit if:
 - We later inspect custom code/assets as their own structural layer.
 - We study “assistant cards” specifically and need a generic baseline failure case.
+
+---
+
+## 029 — Princess Gothetta
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Princess_Gothetta by 7a3bcb16c6f2a9df9ce1/manifest.json`
+
+Basic shape:
+- Goth princess / royalty character with aesthetic-heavy identity and limited visible interaction engine.
+
+Reason rejected:
+- Too thin / insufficient structure.
+- Mostly category/tag/aesthetic signal.
+- No clear Character Core beyond “goth princess.”
+- No useful interaction engine strong enough for accepted sampling.
+
+What, if anything, was still useful:
+- Shows that strong aesthetic labels do not automatically create behavior.
+- Useful negative contrast against `009 — Zucy`, which is also thin royalty but has a small world, role, and interaction ritual.
+- Useful warning: royalty characters need a court, duty, conflict, user role, or pressure source; otherwise they are just fashion plus title.
+
+Could revisit if:
+- We later study goth/royalty aesthetics, aesthetic-first cards, or weak royalty structures as a comparison set.
