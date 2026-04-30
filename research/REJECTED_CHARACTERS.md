@@ -1,0 +1,70 @@
+# Rejected Characters
+
+This file tracks characters inspected during Character Shape Research but not accepted into `SAMPLED_CHARACTERS.md`.
+
+A rejected character is not necessarily bad. It only means the character did not add enough distinct structural value for the current research pass, was redundant with stronger samples, was too thin to study, or was not appropriate for this research purpose.
+
+The main protocol lives here:
+
+```text
+research/CHARACTER_SHAPE_RESEARCH.md
+```
+
+Accepted samples live here:
+
+```text
+research/SAMPLED_CHARACTERS.md
+```
+
+## Rules
+
+- Add rejected characters only after they have been inspected.
+- Keep entries compact.
+- Do not paste full prompts.
+- Do not include explicit NSFW details unless structurally necessary.
+- Do not use this file to mock, rank, or shame creators.
+- Never renumber accepted samples because of rejects.
+- A rejected character may be revisited later if it becomes useful for comparison.
+- Rejection means low research value for the current pass, not permanent worthlessness.
+
+## Rejection Reasons
+
+Use one or more:
+
+- Redundant with existing sample
+- Too thin / insufficient structure
+- No clear Character Core
+- No useful interaction engine
+- Mostly category/tag noise
+- Misclassified or internally inconsistent
+- Unsafe/problematic for this research purpose
+- Too dependent on unavailable context
+- Better saved for later comparison
+
+## Entry Template
+
+```md
+## R000 — Character Name
+
+Source side:
+- SFW / NSFW / mixed / unclear
+
+Repo path:
+- `path/to/manifest.json`
+
+Basic shape:
+-
+
+Reason rejected:
+-
+
+What, if anything, was still useful:
+-
+
+Could revisit if:
+-
+```
+
+## Rejected Entries
+
+No rejected entries yet.
