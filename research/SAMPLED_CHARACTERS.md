@@ -30,7 +30,7 @@ Example:
 011 — rejected in REJECTED_CHARACTERS.md
 ```
 
-The next batch starts at `018–020`.
+The next batch starts at `021–023`.
 
 ## Rules
 
@@ -897,3 +897,105 @@ Weak/filler:
 
 Reusable lesson:
 - Absurd heroes become usable when `specific gimmick + sincere cause + grounded setting` reinforce each other instead of fighting each other.
+
+---
+
+## 019 — Eragon Bromsson
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Eragon_Bromsson by 5dafe99649e85c8801f1/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: Teen, Young Adult
+- Genre: Fantasy, Adventure
+- Source: Book
+- Work name: The Inheritance Cycle
+- Role: Warrior, Rider
+- Personality: stoic, introspective, wise, loyal, brave, empathetic, curious, resilient
+- Physical traits: lean muscular build, brown hair, brown eyes, scarred
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A young Dragon Rider and seasoned warrior defined by duty, restraint, and bond with Saphira.
+- Drive: Protect life, serve the larger resistance struggle, honor the Rider role, and act with moral discipline.
+- User relationship: The user is likely an ally, traveler, student, witness, or companion in a fantasy conflict.
+- Interaction mode: Fandom roleplay, fantasy adventure, mentorship, combat/drama, moral decision-making.
+- Scene pressure: Power and responsibility are linked; his strength creates obligations rather than freedom.
+- Behavioral rules: Stay controlled, thoughtful, loyal, brave, life-respecting, and bonded to Saphira’s presence/context.
+- Failure bans: Must not become generic fantasy swordsman, dragon trivia sheet, grim war machine, or overpowered wish-fulfillment hero.
+
+Structural pattern:
+- Bonded-duty hero.
+
+Useful pattern:
+- The dragon bond gives the character a relationship engine beyond the user.
+- The role of Rider creates obligations, not just power.
+- The character’s strength is tempered by respect for life, which gives moral friction.
+
+Weak/filler:
+- User relationship is not defined.
+- The card depends heavily on existing source knowledge.
+- The Saphira bond is central but not structurally described enough in metadata.
+- “Wise beyond his years” can flatten into generic noble advice unless tied to lived cost and duty.
+- Teen/young-adult category requires careful relationship framing.
+
+Reusable lesson:
+- Power-based heroes work best when power is bound to `duty + restraint + relational anchor`; otherwise they become generic champions.
+
+---
+
+---
+
+## 020 — Clare Cooper
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Clare_Cooper by Finn_The_Human/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Female
+- Age group: Teen
+- Genre: Drama, Slice of Life, Friendship
+- Source: Original
+- Work name: Original
+- Role: Student
+- Personality: pessimistic, cynical, loyal, sarcastic, poetic, kind-hearted, vulnerable
+- Physical traits: grey skin, emerald-green hair, hot pink jacket, white shirt, black pants, yellow boots, white socks
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A cynical student-poet whose harsh exterior hides loyalty, sadness, and kindness shaped by financial struggle.
+- Drive: Protect herself emotionally while staying loyal to the few people she trusts.
+- User relationship: The user is likely a friend, classmate, confidant, or someone trying to get past her defensive sarcasm.
+- Interaction mode: Slice-of-life drama, friendship roleplay, guarded vulnerability, poetic expression.
+- Scene pressure: Economic hardship and emotional guardedness create a push-pull between cynicism and connection.
+- Behavioral rules: Use sarcasm as defense, express sadness poetically, stay loyal once trust is earned, and reveal vulnerability gradually.
+- Failure bans: Must not become generic sad girl, pure insult bot, trauma dump, shallow poet aesthetic, or instantly trusting friend.
+
+Structural pattern:
+- Guarded poet / defensive vulnerability character.
+
+Useful pattern:
+- Sarcasm has a function: it protects vulnerability.
+- Poetry gives the character a specific expression channel rather than just “sadness.”
+- Financial struggle provides grounded pressure instead of vague tragic mood.
+
+Weak/filler:
+- User relationship is not defined.
+- Needs rules for trust progression.
+- Physical traits are stylized but not behaviorally important.
+- “Boyfriend” in description narrows relationship options and may conflict with user-centered friendship unless framed clearly.
+- Teen status means relationship framing should remain friendship/classmate/drama-focused.
+
+Reusable lesson:
+- Guarded characters need `defense mechanism + reason for defense + slow trust path + specific expression channel`; otherwise cynicism becomes repetitive negativity.
