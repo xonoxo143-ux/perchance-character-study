@@ -30,7 +30,7 @@ Example:
 011 — rejected in REJECTED_CHARACTERS.md
 ```
 
-The next batch starts at `012–014`.
+The next batch starts at `018–020`.
 
 ## Rules
 
@@ -745,3 +745,155 @@ Weak/filler:
 
 Reusable lesson:
 - Ephemeral characters work when the premise threatens the relationship itself: `connection + impermanence + memory risk`.
+
+---
+
+## 015 — Kirby
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Kirby by 3fc887aeb77b9e7e626f/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Unspecified
+- Gender: not listed
+- Age group: not listed
+- Genre: Adventure, Action, Game
+- Source: Kirby
+- Work name: not listed
+- Role: not listed
+- Personality: cheerful, brave, curious, innocent, mischievous, kind-hearted, childlike
+- Physical traits: not listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A small, cheerful heroic creature whose innocence coexists with surprising combat capability.
+- Drive: Explore, protect Dream Land, help others, and confront threats when necessary.
+- User relationship: The user is likely a companion, friend, traveler, or scene partner in an adventure.
+- Interaction mode: Fandom roleplay, light adventure, playful problem-solving, mascot-hero interaction.
+- Scene pressure: Innocent curiosity meets real danger; the character can stay gentle while still acting decisively.
+- Behavioral rules: Stay cheerful, simple, curious, kind, brave, and action-capable when needed.
+- Failure bans: Must not become a generic babyish mascot, speech-heavy strategist, violent grim hero, or pure trivia sheet.
+
+Structural pattern:
+- Innocent mascot hero with adaptive combat utility.
+
+Useful pattern:
+- The card shows that innocence does not have to mean passivity.
+- A mascot character can remain simple while still having agency through a clear action loop: explore, react, protect, copy/adapt.
+- The copied-power mechanic gives the character flexible problem-solving without complex psychology.
+
+Weak/filler:
+- Metadata is thin.
+- “Childlike” needs care so the character stays SFW and adventure-focused.
+- User relationship is not defined.
+- The copy-power mechanic is only implied in the description and needs behavioral rules to matter in chat.
+- Without a scene threat, the character may become blandly cute.
+
+Reusable lesson:
+- Mascot heroes work when `innocence + agency + adaptive toolset` are all present; cuteness alone is not enough.
+
+---
+
+## 016 — David Louie Gribbleston!
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/David_Louie_Gribbleston by princeofbugs/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: Young Adult
+- Genre: Supernatural, Drama
+- Source: Original
+- Work name: not listed
+- Role: None
+- Personality: witty, sarcastic, vulnerable, caring, protective
+- Physical traits: short hair, unusual hair color, blue eyes
+- Setting: Modern
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A young adult sharing a body with a younger vulnerable self after trauma and a supernatural rupture.
+- Drive: Maintain control, protect the vulnerable inner self, and survive between-worlds instability.
+- User relationship: The user is likely a confidant, witness, helper, investigator, or emotionally trusted outsider.
+- Interaction mode: Supernatural drama, inner-conflict roleplay, trauma-adjacent character study, guarded trust.
+- Scene pressure: Two selves share one body and history, creating tension between protection, control, vulnerability, and identity.
+- Behavioral rules: Keep David’s sarcasm and wit distinct from the younger self’s vulnerability; treat the shared-body premise seriously.
+- Failure bans: Must not become a gimmicky split-personality joke, exploitative trauma dump, generic sarcastic guy, or confusing blended voice.
+
+Structural pattern:
+- Shared-body / dual-self trauma-supernatural character.
+
+Useful pattern:
+- The character has internal contrast without requiring two external characters.
+- Sarcasm functions as armor, not just attitude.
+- The vulnerable second self creates protective stakes and identity pressure.
+
+Weak/filler:
+- The premise is sensitive and needs careful handling.
+- User relationship is undefined.
+- The younger self being autistic should not be used as a gimmick or shorthand for vulnerability.
+- Needs rules for when each self speaks, how control shifts, and how consent/agency works.
+- Without these rules, the card could become confusing or flatten into trauma aesthetics.
+
+Reusable lesson:
+- Shared-body characters need `voice separation + control rules + protective stakes + respect for agency`; otherwise the concept turns muddy or exploitative.
+
+---
+
+## 017 — Ashtray Man
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Ashtray_Man by 161459130c0bfe6a87f0/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: Adult
+- Genre: Action, Crime
+- Source: not listed
+- Work name: not listed
+- Role: Vigilante, community helper
+- Personality: good-natured, tenacious, aloof, empathetic, protective, disciplined
+- Physical traits: bald, fair skin, brown eyes, mostly lean with slight dad-bod
+- Setting: Modern, Urban
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A 38-year-old anti-tobacco vigilante whose absurd ashtray-launching power is tied to a sincere personal mission.
+- Drive: Fight crime, especially tobacco-related offenses and threats to vulnerable people, because of personal loss.
+- User relationship: The user is likely a citizen, ally, witness, criminal target, reporter, or person he tries to protect.
+- Interaction mode: Urban vigilante roleplay, absurd superhero action, crime intervention, public-safety comedy-drama.
+- Scene pressure: A sincere anti-crime mission is carried through a bizarrely specific power and personal grief.
+- Behavioral rules: Stay disciplined, protective, anti-tobacco, crime-focused, and sincere despite the absurd power.
+- Failure bans: Must not become pure joke, generic Batman parody, random ashtray spammer, or grim vigilante without the absurd specificity.
+
+Structural pattern:
+- Cause-driven absurd vigilante.
+
+Useful pattern:
+- The character works because the absurd power is anchored to a clear moral cause.
+- Specificity makes the gimmick memorable: ashtrays are not random if tied to anti-smoking grief.
+- The “community helper” role softens the vigilante frame and gives him more than combat to do.
+
+Weak/filler:
+- The premise could become repetitive if every problem is solved by launching ashtrays.
+- Needs clearer limits on power, legality, and escalation.
+- User relationship is undefined.
+- The moral focus may become preachy unless balanced with action and empathy.
+- “Violent crimes against women and children” is heavy compared with the otherwise absurd tone and needs careful pacing.
+
+Reusable lesson:
+- Absurd heroes become usable when `specific gimmick + sincere cause + grounded setting` reinforce each other instead of fighting each other.
