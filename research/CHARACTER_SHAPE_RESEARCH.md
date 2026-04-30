@@ -51,15 +51,17 @@ research/CHARACTER_SHAPE_RESEARCH.md
 research/SAMPLED_CHARACTERS.md
 research/REJECTED_CHARACTERS.md
 research/PATTERN_INDEX.md
+research/batches/
 ```
 
 File roles:
 
 ```text
 CHARACTER_SHAPE_RESEARCH.md = protocol / method / durable rules
-SAMPLED_CHARACTERS.md       = accepted evidence ledger
+SAMPLED_CHARACTERS.md       = accepted evidence ledger when direct append is safe
 REJECTED_CHARACTERS.md      = inspected but not accepted / redundant / low-value / unsafe / deferred notes
 PATTERN_INDEX.md            = provisional synthesis of reusable patterns
+research/batches/           = batch-level accepted entries or fallback records when the main ledger is too large to edit safely
 ```
 
 ## Source Material
@@ -129,7 +131,7 @@ In this project, **sampled** means any character we inspected closely enough to 
 Sampled characters can have either outcome:
 
 ```text
-accepted sample = inspected and accepted into SAMPLED_CHARACTERS.md
+accepted sample = inspected and accepted into SAMPLED_CHARACTERS.md or research/batches/
 rejected sample = inspected but recorded in REJECTED_CHARACTERS.md
 ```
 
@@ -203,18 +205,21 @@ Use this loop:
 8. Identify the structural pattern.
 9. Identify useful signal versus filler.
 10. Record one reusable lesson when applicable.
-11. Append accepted entries to SAMPLED_CHARACTERS.md only after review.
-12. Record rejected/deferred entries in REJECTED_CHARACTERS.md when useful.
-13. Update PATTERN_INDEX.md only when a pattern is worth tracking.
+11. Append accepted entries to SAMPLED_CHARACTERS.md when safe.
+12. If the accepted ledger is too large to edit safely, write accepted entries under research/batches/ and mark them as pending merge rather than risking a truncated rewrite.
+13. Record rejected/deferred entries in REJECTED_CHARACTERS.md when useful.
+14. Update PATTERN_INDEX.md only when a pattern is worth tracking.
 ```
 
 Do not repeat a sampled character unless the goal is explicit comparison.
 
 Do not commit sample entries before drafting them in chat.
 
+Do not rewrite a large ledger from a truncated fetch. If a GitHub/tooling path cannot safely append to `SAMPLED_CHARACTERS.md`, preserve the accepted entries in `research/batches/` and continue the global numbering.
+
 ## Sample Entry Template
 
-Accepted sampled characters should use this format in `SAMPLED_CHARACTERS.md`:
+Accepted sampled characters should use this format in `SAMPLED_CHARACTERS.md` or `research/batches/`:
 
 ```md
 ## 000 — Character Name
@@ -267,7 +272,7 @@ Rejected sampled characters should use the template in `REJECTED_CHARACTERS.md` 
 Use three outcomes during triage:
 
 ```text
-Accept = adds useful structure now and should go in SAMPLED_CHARACTERS.md
+Accept = adds useful structure now and should go in SAMPLED_CHARACTERS.md or research/batches/
 Reject = inspected but low-value, redundant, unsafe/problematic, or too thin for this research pass
 Defer = potentially useful later but not needed for the current gap
 ```
@@ -438,6 +443,7 @@ Future assistants should follow these rules:
 - Do not let the sample log bloat this protocol file.
 - Keep sample entries compact and useful.
 - Preserve uncertainty when metadata is incomplete or suspicious.
+- Use batch files when the accepted ledger is too large to update safely.
 - Do not import unrelated prior project context into this branch unless explicitly instructed.
 
 ## How This Feeds Future Character Creation
@@ -499,7 +505,7 @@ Labels only matter when they become behavior.
 
 ## Next Research Step
 
-Continue with candidate triage for samples 012–014.
+Continue with candidate triage for samples 021–023.
 
 For each new pass:
 
@@ -508,5 +514,5 @@ For each new pass:
 2. Draft accepted/rejected/deferred candidates in chat.
 3. Decide accept / reject / defer.
 4. Commit only after the draft decision.
-5. Update SAMPLED_CHARACTERS.md, REJECTED_CHARACTERS.md, and PATTERN_INDEX.md as appropriate.
+5. Update SAMPLED_CHARACTERS.md or research/batches/, REJECTED_CHARACTERS.md, and PATTERN_INDEX.md as appropriate.
 ```
