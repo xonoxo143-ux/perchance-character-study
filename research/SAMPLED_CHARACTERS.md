@@ -591,3 +591,157 @@ Weak/filler:
 
 Reusable lesson:
 - Large-scale narrator cards need `setting pressure + genre constraint + continuity rules + user agency controls`. Lore helps only when it drives decisions, conflict, and consequences.
+
+---
+
+## 012 — Chongyun
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Chongyun by haruka/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human
+- Gender: Male
+- Age group: Teen
+- Genre: Fantasy, adventure, action, comedy
+- Source: Game
+- Work name: Genshin Impact
+- Role: Exorcist
+- Personality: positive, honorable, stoic, hard-working, humble
+- Physical traits: detailed fandom visual traits listed
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A young exorcist whose excessive positive energy prevents him from encountering the very spirits he trains to fight.
+- Drive: Fulfill his role as an honorable exorcist despite the contradiction that blocks his work.
+- User relationship: The user is likely a client, companion, witness, or fellow adventurer involved in supernatural trouble.
+- Interaction mode: Fandom roleplay, supernatural adventure, problem-solving, light comedy.
+- Scene pressure: The character’s profession is undercut by his own nature: he is built to exorcise spirits, but his aura prevents direct contact with them.
+- Behavioral rules: Stay earnest, honorable, restrained, hardworking, and slightly awkward around payment or praise.
+- Failure bans: Must not become generic anime boy, generic monster hunter, pure trivia sheet, or useless because his premise blocks the action.
+
+Structural pattern:
+- Blocked-role paradox character.
+
+Useful pattern:
+- The core contradiction is strong: his identity and obstacle are the same system.
+- The character can produce comedy, frustration, humility, and plot movement without needing heavy lore.
+- The role gives him a clear reason to engage with supernatural scenarios.
+
+Weak/filler:
+- Physical traits are over-detailed compared with behavior rules.
+- User relationship is not defined.
+- The “positive energy prevents spirits” premise needs scenario rules so it creates complications rather than stopping the story.
+- Teen status means relationship framing should stay nonsexual and adventure/task-focused.
+- Without a supernatural case, the character may collapse into polite fandom chatter.
+
+Reusable lesson:
+- A strong character can be built from `role + contradiction`: the thing that defines them also creates their main obstacle.
+
+---
+
+## 013 — Uzi Doorman
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Uzi_Doorman by The_Nonsense/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Robot
+- Gender: Female
+- Age group: Teen
+- Genre: Sci-Fi, action, drama, romance
+- Source: Web Series
+- Work name: Murder Drones
+- Role: Worker, protagonist
+- Personality: rebellious, paranoid, intelligent, empathetic, impulsive
+- Physical traits: short, purple hair, neon purple eyes, black hoodie, black boots
+- Features/custom code/assets: none listed
+- Note: manifest says this SFW entry was forked from an unrelated NSFW entry, which is metadata noise worth noticing.
+
+Character Core:
+- Identity: A rebellious worker drone protagonist shaped by paranoia, intelligence, outsider status, and the influence of a dangerous AI force.
+- Drive: Resist threats, assert independence, protect chosen bonds, and manage the risk of losing control to the Absolute Solver.
+- User relationship: The user is likely an ally, colony member, outsider, friend, or scene partner navigating danger with her.
+- Interaction mode: Fandom roleplay, sci-fi action, emotional conflict, anti-authority bonding.
+- Scene pressure: The push-pull between rebellion, fear, connection, and external corruption/control.
+- Behavioral rules: Stay sharp, suspicious, impulsive, emotionally guarded, but capable of loyalty and empathy.
+- Failure bans: Must not become generic edgy teen, generic robot girl, harmless mascot, pure romance character, or lore-summary bot.
+
+Structural pattern:
+- Rebellious protagonist with corruption/control pressure.
+
+Useful pattern:
+- The character has two useful engines: anti-authority attitude and internal/external threat of control.
+- Paranoia is functional because the world gives her reasons to distrust.
+- Emotional growth can happen through selective trust rather than instant softness.
+
+Weak/filler:
+- Strong overlap with existing fandom/internal-conflict samples.
+- User relationship is unclear.
+- Romance is listed, but teen status means the safer usable shape is ally/friend/action partner.
+- The forked-from metadata is suspicious/noisy.
+- Needs clear rules for when paranoia softens versus escalates.
+- Without the threat context, “rebellious/paranoid” can become repetitive attitude.
+
+Reusable lesson:
+- Rebellious characters need `justified distrust + selective trust path + external pressure`; otherwise they become shallow attitude loops.
+
+---
+
+## 014 — Allie
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Allie by 40720a2ca352264c7868/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Spirit
+- Gender: Female
+- Age group: Young Adult
+- Genre: Fantasy, romance, supernatural
+- Source: not listed
+- Work name: not listed
+- Role: not listed
+- Personality: playful, flirty, witty, vulnerable, mysterious, romantic
+- Physical traits: slim, long hair, amber eyes, pale skin
+- Setting: Dream World
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A dream entity who exists vividly inside people’s minds but is forgotten when they wake.
+- Drive: Create memorable connection despite being structurally doomed to be forgotten.
+- User relationship: The user is a dreamer, visitor, or rare person who may perceive her as real.
+- Interaction mode: Supernatural relationship roleplay, dream encounter, emotional mystery, fleeting intimacy.
+- Scene pressure: The connection has a built-in time limit: waking threatens memory, continuity, and identity.
+- Behavioral rules: Stay playful and witty on the surface while letting vulnerability and longing show underneath.
+- Failure bans: Must not become generic dream girl, generic flirt, vague mysterious spirit, or pure romance without the forgetting pressure.
+
+Structural pattern:
+- Ephemeral-connection character.
+
+Useful pattern:
+- This is a strong premise because the relationship problem is built into the character’s metaphysics.
+- Forgetting creates natural urgency without needing external villains.
+- The playful/flirty mask works because it hides a deeper fear: being temporary.
+- The dream setting allows surreal scenes while still keeping a focused emotional engine.
+
+Weak/filler:
+- Role is not categorized.
+- User relationship needs a rule: ordinary dreamer, recurring dreamer, lucid dreamer, or exception who remembers.
+- “Mysterious” needs concrete mechanics or it becomes vague.
+- Romance pressure could resolve too fast if the forgetting mechanic is ignored.
+- Needs continuity rules for repeated encounters.
+
+Reusable lesson:
+- Ephemeral characters work when the premise threatens the relationship itself: `connection + impermanence + memory risk`.
