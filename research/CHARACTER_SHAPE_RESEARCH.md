@@ -49,6 +49,17 @@ Core files:
 ```text
 research/CHARACTER_SHAPE_RESEARCH.md
 research/SAMPLED_CHARACTERS.md
+research/REJECTED_CHARACTERS.md
+research/PATTERN_INDEX.md
+```
+
+File roles:
+
+```text
+CHARACTER_SHAPE_RESEARCH.md = protocol / method / durable rules
+SAMPLED_CHARACTERS.md       = accepted evidence ledger
+REJECTED_CHARACTERS.md      = inspected but not accepted / redundant / low-value / unsafe / deferred notes
+PATTERN_INDEX.md            = provisional synthesis of reusable patterns
 ```
 
 ## Source Material
@@ -65,9 +76,16 @@ Useful browsing source:
 GitHub Pages / gallery view for the Perchance character database
 ```
 
+Local working source, when available:
+
+```text
+perchance-character-database-main.zip
+perchance_sfw_manifest_index.csv
+```
+
 The gallery is better for finding characters.
 
-The repo manifests are better for structural study because they expose metadata such as:
+The repo manifests and local manifest index are better for structural study because they expose metadata such as:
 
 - rating
 - species
@@ -139,23 +157,29 @@ The Character Core is more important than the category list. Category labels are
 
 ## Research Loop
 
-Each pass samples **one new character**.
+Each pass inspects candidates and accepts only characters that add useful structure.
 
 Use this loop:
 
 ```text
-1. Pick one character that has not already been sampled.
-2. Inspect metadata and only enough character text to understand the shape.
-3. Extract the basic category shape.
-4. Extract the Character Core.
-5. Identify the structural pattern.
-6. Identify useful signal versus filler.
-7. Record one reusable lesson.
-8. Append the result to SAMPLED_CHARACTERS.md.
-9. Move on to a new character next pass.
+1. Choose a target shape or research gap for the batch.
+2. Pull several candidate characters from the source index, ZIP, gallery, or repo.
+3. Quick-triage candidates in chat.
+4. Decide for each candidate: accept, reject, or defer.
+5. Draft accepted entries in chat before committing.
+6. Extract the basic category shape.
+7. Extract the Character Core.
+8. Identify the structural pattern.
+9. Identify useful signal versus filler.
+10. Record one reusable lesson.
+11. Append accepted entries to SAMPLED_CHARACTERS.md only after review.
+12. Record rejected/deferred entries in REJECTED_CHARACTERS.md when useful.
+13. Update PATTERN_INDEX.md only when a pattern is worth tracking.
 ```
 
 Do not repeat a sampled character unless the goal is explicit comparison.
+
+Do not commit sample entries before drafting them in chat.
 
 ## Sample Entry Template
 
@@ -204,6 +228,26 @@ Weak/filler:
 Reusable lesson:
 -
 ```
+
+## Accepted / Rejected / Deferred
+
+Use three outcomes during triage:
+
+```text
+Accept = adds useful structure now and should go in SAMPLED_CHARACTERS.md
+Reject = inspected but low-value, redundant, unsafe/problematic, or too thin for this research pass
+Defer = potentially useful later but not needed for the current gap
+```
+
+Accepted samples should teach at least one reusable lesson.
+
+Rejected entries should answer:
+
+```text
+Why did we skip this, and what tiny thing did we learn anyway?
+```
+
+Deferred entries may be recorded in `REJECTED_CHARACTERS.md` if needed to avoid losing a useful candidate.
 
 ## What Counts as Useful
 
@@ -320,6 +364,8 @@ Character Shapes
 
 Only update this section when a new broad pattern family appears. Do not add every sampled character here.
 
+Use `PATTERN_INDEX.md` for provisional synthesis. Keep this protocol file focused on method.
+
 ## Safety and Content Handling
 
 The research may include SFW and NSFW database entries.
@@ -348,7 +394,8 @@ NSFW entries can still be structurally useful, but extract:
 
 Future assistants should follow these rules:
 
-- Sample one new character at a time.
+- Sample one new character at a time, or use small reviewed batches of three.
+- Draft entries in chat before committing them.
 - Do not turn the research into generic writing advice.
 - Do not browse randomly without extracting a pattern.
 - Do not overfit one sample into a universal rule.
@@ -418,14 +465,15 @@ Labels only matter when they become behavior.
 
 ## Next Research Step
 
-Continue with a new character sample.
+Continue with candidate triage for samples 009–011.
 
 For each new pass:
 
 ```text
-1. Pick a character not listed in SAMPLED_CHARACTERS.md.
-2. Extract its basic category shape.
-3. Extract its Character Core.
-4. Append one compact entry to SAMPLED_CHARACTERS.md.
-5. Update this main protocol only if a new broad pattern family or rule is discovered.
+1. Pick a target shape or gap.
+2. Inspect several candidates.
+3. Draft accepted candidates in chat.
+4. Decide accept / reject / defer.
+5. Commit only after the draft decision.
+6. Update SAMPLED_CHARACTERS.md, REJECTED_CHARACTERS.md, and PATTERN_INDEX.md as appropriate.
 ```
