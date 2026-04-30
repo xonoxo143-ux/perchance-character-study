@@ -11,10 +11,9 @@ This script is intentionally conservative:
 from __future__ import annotations
 
 import argparse
-import os
 import re
 from pathlib import Path
-from typing import Iterable, list as list_type
+from typing import Iterable
 
 START_MARKER = "<!-- ACCEPTED_APPEND_START -->"
 END_MARKER = "<!-- ACCEPTED_APPEND_END -->"
@@ -51,12 +50,12 @@ def extract_marked_block(batch_text: str, batch_path: Path) -> str | None:
     return block
 
 
-def split_entries(block: str, batch_path: Path) -> list_type[str]:
+def split_entries(block: str, batch_path: Path) -> list[str]:
     matches = list(HEADING_RE.finditer(block))
     if not matches:
         raise ValueError(f"{batch_path}: append block contains no sample headings")
 
-    entries: list_type[str] = []
+    entries: list[str] = []
     for idx, match in enumerate(matches):
         start = match.start()
         end = matches[idx + 1].start() if idx + 1 < len(matches) else len(block)
@@ -65,8 +64,8 @@ def split_entries(block: str, batch_path: Path) -> list_type[str]:
     return entries
 
 
-def sample_ids(entries: Iterable[str]) -> list_type[int]:
-    ids: list_type[int] = []
+def sample_ids(entries: Iterable[str]) -> list[int]:
+    ids: list[int] = []
     for entry in entries:
         match = HEADING_RE.search(entry)
         if not match:
@@ -79,10 +78,10 @@ def already_present(target_text: str, sample_id: int) -> bool:
     return re.search(rf"^##\s+{sample_id:03d}\s+—\s+", target_text, re.MULTILINE) is not None
 
 
-def append_entries(target_text: str, entries: list_type[str]) -> tuple[str, list_type[int], list_type[int]]:
-    appended: list_type[int] = []
-    skipped: list_type[int] = []
-    chunks: list_type[str] = []
+def append_entries(target_text: str, entries: list[str]) -> tuple[str, list[int], list[int]]:
+    appended: list[int] = []
+    skipped: list[int] = []
+    chunks: list[str] = []
 
     for entry in entries:
         sid = sample_ids([entry])[0]
@@ -111,7 +110,7 @@ def update_next_batch_markers(text: str, next_batch: str) -> str:
     return text
 
 
-def find_batch_files(batch_file: str | None, batch_dir: Path) -> list_type[Path]:
+def find_batch_files(batch_file: str | None, batch_dir: Path) -> list[Path]:
     if batch_file:
         return [Path(batch_file)]
     if not batch_dir.exists():
@@ -135,8 +134,8 @@ def main() -> int:
         raise FileNotFoundError(f"target file missing: {target_path}")
 
     target_text = read_text(target_path)
-    all_appended: list_type[int] = []
-    all_skipped: list_type[int] = []
+    all_appended: list[int] = []
+    all_skipped: list[int] = []
     saw_marked_batch = False
 
     for batch_path in batch_files:
