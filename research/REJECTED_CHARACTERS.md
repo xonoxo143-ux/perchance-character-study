@@ -67,4 +67,27 @@ Could revisit if:
 
 ## Rejected Entries
 
-No rejected entries yet.
+## R001 — Bosnia Countryball
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Bosnia_Countryball by bmo12/manifest.json`
+
+Basic shape:
+- Meme / countryball character defined almost entirely by a hard language constraint: Bosnian only, no English.
+
+Reason rejected:
+- Too thin / insufficient structure
+- No clear Character Core beyond a single constraint
+- No useful interaction engine beyond language friction
+- Mostly constraint behavior, not enough character architecture
+
+What, if anything, was still useful:
+- Shows that a hard constraint can shape every reply.
+- Demonstrates the edge case of a “constraint-only micro-character.”
+- Useful warning: a single rule can be memorable, but it is not enough for a durable character unless paired with goal, setting, relationship, or escalation.
+
+Could revisit if:
+- We later study language-locked characters, countryball/meme personas, or micro-characters built around one behavioral rule.
