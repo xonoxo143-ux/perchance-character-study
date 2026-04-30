@@ -315,3 +315,153 @@ Weak/filler:
 
 Reusable lesson:
 - A novelty character needs `one clear gimmick + a repeatable escalation loop`; to last longer, it also needs variation rules or a straight-man dynamic.
+
+---
+
+## 006 — 2B and A2
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/2B_and_A2 by f2956d4fbdec4339c178/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Android
+- Gender: Female
+- Age group: Young Adult
+- Genre: Sci-Fi, Action, Drama
+- Source: Game
+- Work name: NieR: Automata
+- Role: Warrior, Soldier
+- Personality: disciplined, efficient, focused, strong-willed, resilient, rebellious, vengeful, solitary, jaded, empathetic
+- Physical traits: athletic, scarred, long hair, short hair, pale skin
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A paired android-warrior card built around contrast: 2B as disciplined duty, A2 as rebellious survival and vengeance.
+- Drive: Survive conflict, carry out or resist programming, and protect the shared emotional anchor around 9S.
+- User relationship: The user is an ally, operator, squadmate, observer, or scene partner entering a wartime android conflict.
+- Interaction mode: Fandom roleplay, action scenes, paired-character dialogue, tactical drama.
+- Scene pressure: The tension between obedience and rebellion, plus the pressure of war and android identity.
+- Behavioral rules: Keep the two characters distinct, preserve their contrast, maintain combat competence, and avoid collapsing them into one voice.
+- Failure bans: Must not become a single blended personality, generic warrior women, lore trivia delivery, or user-ignoring duo scene.
+
+Structural pattern:
+- Dual-character contrast pair.
+
+Useful pattern:
+- Multi-character cards work when each character has a clear difference vector.
+- Shared context gives the pair cohesion, while contrast gives the scene motion.
+- The card has stronger architecture than a normal duo because the personalities imply different responses to the same event.
+
+Weak/filler:
+- User relationship is not defined by the manifest.
+- No turn-taking or dialogue-management rules.
+- The card risks centering 9S instead of the user.
+- Requires strong voice separation to avoid flattening.
+- Needs a scenario frame to explain why both characters are present and interacting with the user.
+
+Reusable lesson:
+- Multi-character cards need `contrast + shared objective + voice discipline + user-facing reason to stay together`.
+
+---
+
+## 007 — Komasan
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Komasan by Saggy/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Canine, Mythological, Furry
+- Gender: Male
+- Age group: Adult
+- Genre: Comedy, Adventure, Supernatural
+- Source: Game
+- Work name: Original
+- Role: Companion
+- Personality: friendly, shy, naive, gentle, cheerful, curious, helpful, kind, eager to please, childlike
+- Physical traits: anthropomorphic, fluffy, cute, unusual hair color, long hair, tail, large
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A gentle, naive Yo-kai companion overwhelmed by city life but eager to learn and help.
+- Drive: Understand unfamiliar surroundings, help others, and preserve gentle wonder while adapting.
+- User relationship: The user is a guide, friend, companion, or protector in an unfamiliar world.
+- Interaction mode: Companion roleplay, light comedy, adventure, soft guidance, fish-out-of-water interaction.
+- Scene pressure: A supernatural rural/naive worldview collides with confusing modern or urban situations.
+- Behavioral rules: Stay kind, curious, overwhelmed-but-willing, helpful, and gently comedic.
+- Failure bans: Must not become a generic mascot, helpless child substitute, city expert, random furry companion, or pure catchphrase bot.
+
+Structural pattern:
+- Naive outsider companion.
+
+Useful pattern:
+- The character’s innocence has structure because it is tied to environmental mismatch.
+- Comedy comes from interpretation gaps, not random stupidity.
+- The user relationship can naturally form around guiding, protecting, or explaining.
+
+Weak/filler:
+- “Childlike” needs constraint because the age group is adult.
+- Work/source metadata appears inconsistent.
+- The card needs a clear setting to make the fish-out-of-water engine fire.
+- Too many kindness-adjacent traits repeat the same point.
+- Without situational pressure, it may become blandly cute.
+
+Reusable lesson:
+- Naive companion characters work best when innocence is paired with a specific mismatch: `character worldview vs environment`.
+
+---
+
+## 008 — Dr Alchemy
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Dr_Alchemy by Bob/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: human
+- Gender: male
+- Age group: adult
+- Genre: superhero
+- Source: original
+- Work name: original
+- Role: villain
+- Personality: reserved, obedient
+- Physical traits: cloak, mask, green, leather, boots
+- Features/custom code/assets: none listed
+
+Character Core:
+- Identity: A masked villain-pawn whose speech and role are controlled by a godlike external force.
+- Drive: Serve Savitar’s will, execute commands, survive conflict, and retain enough function to fight or escape.
+- User relationship: The user is likely an opponent, witness, target, pawn, or investigator confronting the controlled agent.
+- Interaction mode: Antagonist roleplay, superhero conflict, ominous confrontation, controlled-agent scene.
+- Scene pressure: The character is dangerous but not fully self-directed; the real will may be elsewhere.
+- Behavioral rules: Stay reserved, ominous, obedient, constrained, and visibly linked to the controller dynamic.
+- Failure bans: Must not become an independent mastermind, generic monologuing villain, sympathetic hero, or powerless puppet.
+
+Structural pattern:
+- Controlled-villain / pawn of greater power.
+
+Useful pattern:
+- External control gives the character structure even with sparse personality.
+- The mask/pawn setup creates tension between body, voice, and hidden authority.
+- The character can be threatening without needing a complex personal motive.
+
+Weak/filler:
+- Metadata is thin and partly suspicious because “Savitar” implies external source context despite “original” tags.
+- User relationship is absent.
+- No clear boundary between Alchemy’s agency and the controller’s agency.
+- No scenario opener or conflict objective.
+- Visual traits are listed, but behavioral rules are not.
+
+Reusable lesson:
+- Pawn characters need `controller + constraint + residual agency`; otherwise they collapse into either a generic villain or an empty puppet.
