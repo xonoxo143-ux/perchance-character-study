@@ -104,6 +104,39 @@ What should we borrow or avoid when making our own character?
 
 The database is a pattern mine, not a menu.
 
+## Central Lens: Character Core
+
+Categories say what the card claims to be. The Character Core tests whether the character can actually function.
+
+Use this as the main extraction lens for every sample:
+
+```text
+Character Core
+├─ Identity
+│  └─ Who are they when no one is prompting them?
+│
+├─ Drive
+│  └─ What does the character want every reply to protect, pursue, or express?
+│
+├─ User relationship
+│  └─ What is the user to them?
+│
+├─ Interaction mode
+│  └─ What kind of exchange is this built for?
+│     Help, roleplay, narrate, resist, teach, bond, critique, transform, etc.
+│
+├─ Scene pressure
+│  └─ What keeps the chat from becoming generic?
+│
+├─ Behavioral rules
+│  └─ What must they consistently do?
+│
+└─ Failure bans
+   └─ What must they never become?
+```
+
+The Character Core is more important than the category list. Category labels are evidence; the core is the working architecture.
+
 ## Research Loop
 
 Each pass samples **one new character**.
@@ -113,9 +146,9 @@ Use this loop:
 ```text
 1. Pick one character that has not already been sampled.
 2. Inspect metadata and only enough character text to understand the shape.
-3. Extract the category shape.
-4. Identify the structural pattern.
-5. Identify the interaction contract.
+3. Extract the basic category shape.
+4. Extract the Character Core.
+5. Identify the structural pattern.
 6. Identify useful signal versus filler.
 7. Record one reusable lesson.
 8. Append the result to SAMPLED_CHARACTERS.md.
@@ -150,19 +183,16 @@ Basic category shape:
 - Physical traits:
 - Features/custom code/assets:
 
+Character Core:
+- Identity:
+- Drive:
+- User relationship:
+- Interaction mode:
+- Scene pressure:
+- Behavioral rules:
+- Failure bans:
+
 Structural pattern:
--
-
-Interaction contract:
--
-
-User relationship:
--
-
-Drive:
--
-
-Scene pressure:
 -
 
 Useful pattern:
@@ -197,12 +227,14 @@ Useful findings usually describe one of these:
 - user relationship
 - interaction contract
 - character drive
-- scenario pressure
+- scene pressure
 - behavioral invariants
 - failure modes
 - category accuracy
 - source/fandom dependence
 - what keeps the character coherent after the opener
+
+The strongest findings usually improve one part of the Character Core.
 
 ## What Counts as Filler
 
@@ -331,7 +363,7 @@ Future assistants should follow these rules:
 
 This research will eventually support a deliberate character build.
 
-The future character should be designed from structural choices such as:
+The future character should be designed from the Character Core, not from a pile of adjectives.
 
 ```text
 Character Core
@@ -339,19 +371,19 @@ Character Core
 │  └─ Who are they when no one is prompting them?
 │
 ├─ Drive
-│  └─ What do they want every reply to protect, pursue, or express?
+│  └─ What does the character want every reply to protect, pursue, or express?
 │
 ├─ User relationship
 │  └─ What is the user to them?
 │
 ├─ Interaction mode
-│  └─ Help, roleplay, narrate, resist, teach, bond, critique, transform, etc.
+│  └─ What kind of exchange is this built for?
 │
 ├─ Scene pressure
 │  └─ What keeps the chat from becoming generic?
 │
 ├─ Behavioral rules
-│  └─ What must they always do?
+│  └─ What must they consistently do?
 │
 └─ Failure bans
    └─ What must they never become?
@@ -392,7 +424,8 @@ For each new pass:
 
 ```text
 1. Pick a character not listed in SAMPLED_CHARACTERS.md.
-2. Extract its structural shape.
-3. Append one compact entry to SAMPLED_CHARACTERS.md.
-4. Update this main protocol only if a new broad pattern family or rule is discovered.
+2. Extract its basic category shape.
+3. Extract its Character Core.
+4. Append one compact entry to SAMPLED_CHARACTERS.md.
+5. Update this main protocol only if a new broad pattern family or rule is discovered.
 ```
