@@ -1,0 +1,58 @@
+name: Research Maintenance
+
+on:
+  push:
+    branches:
+      - character-shape-research
+    paths:
+      - 'research/SAMPLED_CHARACTERS.md'
+      - 'research/REJECTED_CHARACTERS.md'
+      - 'research/batches/BATCH_*.md'
+      - 'scripts/validate_research.py'
+      - 'scripts/generate_research_index.py'
+      - '.github/workflows/research-maintenance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-maintenance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  maintain-research:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: character-shape-research
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate research files
+        run: |
+          python scripts/validate_research.py
+
+      - name: Generate sample index
+        run: |
+          python scripts/generate_research_index.py
+
+      - name: Commit generated maintenance files
+        run: |
+          if git diff --quiet; then
+            echo "No generated maintenance changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/SAMPLE_INDEX.md research/generated/SAMPLE_INDEX.csv
+          git commit -m "Update generated research indexes [skip ci]"
+          git pull --rebase origin character-shape-research
+          git push origin character-shape-research
