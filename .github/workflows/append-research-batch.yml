@@ -1,0 +1,55 @@
+name: Append Research Batch
+
+on:
+  push:
+    branches:
+      - character-shape-research
+    paths:
+      - 'research/batches/BATCH_*.md'
+      - 'scripts/append_research_batch.py'
+      - '.github/workflows/append-research-batch.yml'
+  workflow_dispatch:
+    inputs:
+      batch_file:
+        description: 'Optional batch file to process, e.g. research/batches/BATCH_018_020.md'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  append-research-batch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: character-shape-research
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Append marked accepted entries
+        run: |
+          if [ -n "${{ github.event.inputs.batch_file }}" ]; then
+            python scripts/append_research_batch.py --batch-file "${{ github.event.inputs.batch_file }}"
+          else
+            python scripts/append_research_batch.py
+          fi
+
+      - name: Commit appended ledger changes
+        run: |
+          if git diff --quiet; then
+            echo "No ledger changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/SAMPLED_CHARACTERS.md research/CHARACTER_SHAPE_RESEARCH.md
+          git commit -m "Append marked research batch entries [skip ci]"
+          git push origin character-shape-research
