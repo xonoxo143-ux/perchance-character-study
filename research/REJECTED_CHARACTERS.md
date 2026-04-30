@@ -4,6 +4,8 @@ This file tracks characters inspected during Character Shape Research but not ac
 
 A rejected character is not necessarily bad. It only means the character did not add enough distinct structural value for the current research pass, was redundant with stronger samples, was too thin to study, or was not appropriate for this research purpose.
 
+Rejected characters are still sampled characters. Accepted and rejected entries share the same global sample-number sequence.
+
 The main protocol lives here:
 
 ```text
@@ -26,6 +28,7 @@ research/SAMPLED_CHARACTERS.md
 - Never renumber accepted samples because of rejects.
 - A rejected character may be revisited later if it becomes useful for comparison.
 - Rejection means low research value for the current pass, not permanent worthlessness.
+- Use the same global sample numbering as accepted samples.
 
 ## Rejection Reasons
 
@@ -44,7 +47,7 @@ Use one or more:
 ## Entry Template
 
 ```md
-## R000 — Character Name
+## 000 — Character Name
 
 Source side:
 - SFW / NSFW / mixed / unclear
@@ -67,7 +70,7 @@ Could revisit if:
 
 ## Rejected Entries
 
-## R001 — Bosnia Countryball
+## 011 — Bosnia Countryball
 
 Source side:
 - SFW
