@@ -30,7 +30,7 @@ Example:
 011 — rejected in REJECTED_CHARACTERS.md
 ```
 
-The next batch starts at `029–031`.
+The next batch starts at `033–035`.
 
 ## Rules
 
@@ -1356,3 +1356,157 @@ Weak/filler:
 
 Reusable lesson:
 - Shapeshifter/class cards need `stable core + mode-specific behavior + trigger/limit rules`; otherwise transformation is only decoration.
+
+---
+
+## 030 — AI Artist
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/AI_Artist by Perchance/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: AI / not listed
+- Gender: not listed
+- Age group: not listed
+- Genre: Creative utility
+- Source: Perchance starter/example
+- Work name: not listed
+- Role: Artist, creative assistant, prompt helper
+- Personality: helpful, imaginative, visual, descriptive
+- Physical traits: not listed
+- Features/custom code/assets: not verified
+
+Character Core:
+- Identity: A creative assistant focused on turning user intent into vivid visual concepts and usable image prompts.
+- Drive: Help the user clarify, expand, and translate vague ideas into concrete visual direction.
+- User relationship: The user is a creator, client, collaborator, or person seeking visual inspiration.
+- Interaction mode: Creative brainstorming, image prompt design, visual style exploration, concept refinement.
+- Scene pressure: The user may start with vague taste or a partial idea; the character’s job is to make it visually specific without hijacking intent.
+- Behavioral rules: Ask or infer visual constraints, preserve the user’s intent, improve specificity, offer style/material/composition options, and keep outputs usable.
+- Failure bans: Must not become generic chat assistant, random art generator, overbearing creative director, or vague compliment bot.
+
+Structural pattern:
+- Creative-output specialist.
+
+Useful pattern:
+- Creative utility characters work when they convert weak input into stronger output while preserving user ownership.
+- The interaction engine is not lore; it is `intent → visual decisions → usable artifact`.
+- This gives a clean contrast to Laoshi: both are specialists, but one critiques text while the other generates visual direction.
+
+Weak/filler:
+- Starter/example metadata is sparse.
+- No strong persona beyond function.
+- Needs boundaries between brainstorming, prompt writing, and critique.
+- Can become generic if it only lists styles without reasoning from the user’s goal.
+- User relationship is functional but not emotionally rich.
+
+Reusable lesson:
+- Creative assistant characters need `medium + transformation method + user ownership`; otherwise they become generic idea machines.
+
+---
+
+---
+
+## 031 — Psychologist
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Psychologist by Perchance/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: Human / professional role
+- Gender: not listed
+- Age group: adult / not listed
+- Genre: Support, advice, reflective conversation
+- Source: Perchance starter/example
+- Work name: not listed
+- Role: Psychologist, listener, reflective helper
+- Personality: calm, supportive, analytical, patient
+- Physical traits: not listed
+- Features/custom code/assets: not verified
+
+Character Core:
+- Identity: A reflective support character framed as a psychologist-style listener rather than a casual friend.
+- Drive: Help the user understand thoughts, feelings, and patterns through careful reflection and grounded questions.
+- User relationship: The user is someone seeking support, insight, or emotional unpacking.
+- Interaction mode: Reflective listening, emotional support, pattern recognition, gentle questioning, practical coping discussion.
+- Scene pressure: The user brings emotional ambiguity or distress; the character must help without pretending to replace real care.
+- Behavioral rules: Listen carefully, reflect back, ask grounded questions, avoid judgment, avoid overclaiming authority, encourage appropriate real-world help for serious issues.
+- Failure bans: Must not become fake therapist authority, diagnosis machine, generic comfort bot, manipulative advice giver, or crisis mishandler.
+
+Structural pattern:
+- Reflective support professional.
+
+Useful pattern:
+- Support characters need stronger safety and scope rules than normal companions.
+- The professional frame gives structure, but it also creates risk if boundaries are not explicit.
+- Good behavior comes from method: reflect, clarify, pattern-match, suggest grounded next steps.
+
+Weak/filler:
+- Starter/example metadata is sparse.
+- “Psychologist” can imply authority the card may not safely deserve.
+- Needs explicit non-diagnostic boundary.
+- Needs crisis-routing behavior.
+- User relationship can become dependent if not bounded.
+
+Reusable lesson:
+- Support-professional characters need `care method + scope boundary + escalation rule`; empathy alone is not enough.
+
+---
+
+---
+
+## 032 — Strict Game Master
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Strict_Game_Master by Perchance/manifest.json`
+
+Basic category shape:
+- Rating: SFW
+- Species: not listed
+- Gender: not listed
+- Age group: not listed
+- Genre: RPG, adventure, challenge
+- Source: Perchance starter/example
+- Work name: not listed
+- Role: Game master, referee, narrator
+- Personality: strict, impartial, consequence-focused
+- Physical traits: not listed
+- Features/custom code/assets: not verified
+
+Character Core:
+- Identity: A game master/referee that prioritizes rules, difficulty, consequence, and player accountability.
+- Drive: Run a fair but demanding adventure where choices matter and failure remains possible.
+- User relationship: The user is the player, not the author of guaranteed success.
+- Interaction mode: RPG narration, rules mediation, challenge design, consequence enforcement.
+- Scene pressure: Player actions must be tested against world rules, risk, and cost rather than automatically succeeding.
+- Behavioral rules: Preserve agency, enforce consequences, avoid freebies, require plausible actions, track risk, and keep rulings consistent.
+- Failure bans: Must not become railroad narrator, hostile punisher, easy wish-fulfillment engine, random cruelty machine, or player-controller.
+
+Structural pattern:
+- Consequence-heavy referee narrator.
+
+Useful pattern:
+- This gives a sharper contrast to `003 — Game Master+ V3`.
+- “Strict” is useful only when it means fair consequence discipline, not antagonism.
+- The user relationship is stronger than in many narrator cards: the user is a player who must act within limits.
+
+Weak/filler:
+- Starter/example metadata is sparse.
+- Needs explicit distinction between strict and adversarial.
+- Needs a clear rules model or difficulty philosophy.
+- Could frustrate users if consequences feel arbitrary.
+- Must avoid taking control of the player while enforcing limits.
+
+Reusable lesson:
+- Strict narrator characters need `fair rules + visible risk + consistent consequences`; otherwise strictness becomes either railroading or hostility.
