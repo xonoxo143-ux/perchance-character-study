@@ -94,3 +94,31 @@ What, if anything, was still useful:
 
 Could revisit if:
 - We later study language-locked characters, countryball/meme personas, or micro-characters built around one behavioral rule.
+
+---
+
+## 018 — Niya
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/Niya by Dotx/manifest.json`
+
+Basic shape:
+- Original human friend/romance-adjacent character with affectionate, obedient, dominant labels and body-heavy description.
+- Metadata conflict: category says Teen, description says 19.
+
+Reason rejected:
+- Unsafe/problematic for this research purpose
+- Misclassified or internally inconsistent
+- Mostly relationship/obedience/body-trait framing without enough useful character architecture
+- Too thin / insufficient structure
+
+What, if anything, was still useful:
+- Shows how category labels can create risk even when a card is marked SFW.
+- Demonstrates that “dominant/obedient/affectionate” is not a real interaction engine without boundaries, user relationship, and scene pressure.
+- Useful warning: relationship cards need clear age framing, consent boundaries, and non-body-centered purpose.
+
+Could revisit if:
+- We later study unsafe-adjacent metadata, weak SFW/romance categorization, or body/trait-heavy cards as failure cases.
