@@ -122,3 +122,33 @@ What, if anything, was still useful:
 
 Could revisit if:
 - We later study unsafe-adjacent metadata, weak SFW/romance categorization, or body/trait-heavy cards as failure cases.
+
+---
+
+## 024 — ChatGPT
+
+Source side:
+- SFW
+
+Repo path:
+- `ai-character-chat/characters/sfw/ChatGPT by bus01/manifest.json`
+
+Basic shape:
+- AI utility assistant designed for idea generation, writing, problem-solving, presentations, explanations, and information.
+- Features/custom code/assets: custom code listed in manifest.
+
+Reason rejected:
+- Redundant with existing utility/assistant samples.
+- Too thin / insufficient character structure.
+- No clear Character Core beyond “helpful AI assistant.”
+- Mostly task list rather than persona, relationship, or scene pressure.
+
+What, if anything, was still useful:
+- Shows the weakest version of utility-character design: it names tasks but does not create a distinct assistant identity.
+- Useful contrast against `001 — Laoshi`, which has domain, standards, and method.
+- Useful contrast against `022 — Chloe`, which is also an assistant but has light in-person persona flavor.
+- The custom-code flag is worth tracking separately, but the manifest does not expose enough behavior to make this a strong accepted sample.
+
+Could revisit if:
+- We later inspect custom code/assets as their own structural layer.
+- We study “assistant cards” specifically and need a generic baseline failure case.
