@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xonoxo143-ux/perchance-character-study/runtime/schema/character-pack.schema.json",
+  "title": "Lb Perchance Character Pack v1",
+  "type": "object",
+  "required": ["schema", "id", "version", "name", "character"],
+  "properties": {
+    "schema": {"const": "lb-character-pack-v1"},
+    "id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "source": {"type": "object"},
+    "character": {
+      "type": "object",
+      "required": ["roleInstruction", "reminderMessage"],
+      "properties": {
+        "roleInstruction": {"type": "string"},
+        "reminderMessage": {"type": "string"},
+        "generalWritingInstructions": {"type": "string"},
+        "temperature": {"type": "number"},
+        "maxTokensPerMessage": {"type": "integer", "minimum": 1},
+        "fitMessagesInContextMethod": {"type": "string"},
+        "autoGenerateMemories": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "initialMessages": {"type": "array"},
+    "modules": {"type": "array", "items": {"type": "string"}},
+    "metadata": {"type": "object"}
+  },
+  "additionalProperties": true
+}
