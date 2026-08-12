@@ -1,0 +1,18 @@
+{
+  "schema": "lb-enchantment-registry-v1",
+  "version": "1.0.0",
+  "enchantments": {
+    "kzhr": {"name": "Kzhr", "description": "The edge resists ordinary dulling and minor chipping."},
+    "vhrket": {"name": "Vhr'ket", "description": "Suppresses sound produced directly by the object."},
+    "ulk": {"name": "Ulk", "description": "Reduces effective carried weight by roughly one third without changing volume."},
+    "qhess": {"name": "Qhess", "description": "Greatly slows heat transfer through the item."},
+    "nhar": {"name": "Nhar", "description": "Greatly slows body heat loss through the item."},
+    "tzkhal": {"name": "Tz'khal", "description": "Stabilizes applied poisons, tranquilizers, and other coatings."},
+    "ghram": {"name": "Ghram", "description": "Disperses part of a sudden physical impact and reduces blunt trauma."},
+    "ssekh": {"name": "Ssekh", "description": "Resists soaking, mud, blood, and ordinary staining."},
+    "xhr": {"name": "Xhr", "description": "Makes the item harder to wrench from its attuned bearer."},
+    "dhekk": {"name": "Dhekk", "description": "Preserves container contents against ordinary spoilage and degradation."},
+    "rrekh": {"name": "Rr'ekh", "description": "Reacts visibly to nearby mana; stronger sources produce a stronger reaction."},
+    "khtzh": {"name": "Kh'tzh", "description": "Slowly repairs small cracks and deformation while unused; it cannot regenerate missing material."}
+  }
+}
