@@ -1,0 +1,18 @@
+{
+  "schema": "lb-perchance-runtime-manifest-v1",
+  "runtimeVersion": 1,
+  "ref": "perchance-runtime",
+  "characters": {
+    "yvette": {
+      "id": "yvette",
+      "name": "Yvette",
+      "path": "runtime/characters/yvette.json",
+      "enabled": true,
+      "packVersion": "1.0.0"
+    }
+  },
+  "shared": {
+    "enchantments": "runtime/shared/enchantments.json"
+  },
+  "bootstrap": "runtime/perchance/github-runtime-loader.js"
+}
