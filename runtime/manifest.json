@@ -8,11 +8,12 @@
       "name": "Yvette",
       "path": "runtime/characters/yvette.json",
       "enabled": true,
-      "packVersion": "1.0.0"
+      "packVersion": "1.0.0",
+      "bootstrap": "runtime/perchance/yvette-bootstrap.js"
     }
   },
   "shared": {
     "enchantments": "runtime/shared/enchantments.json"
   },
-  "bootstrap": "runtime/perchance/github-runtime-loader.js"
+  "loader": "runtime/perchance/github-runtime-loader.js"
 }
