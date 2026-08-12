@@ -1,0 +1,25 @@
+{
+  "schema": "lb-character-pack-v1",
+  "id": "example-id",
+  "version": "0.1.0",
+  "name": "Example Character",
+  "source": {
+    "type": "made",
+    "libraryPath": "library/made/example/"
+  },
+  "character": {
+    "roleInstruction": "",
+    "reminderMessage": "",
+    "generalWritingInstructions": "@roleplay1",
+    "temperature": 0.8,
+    "maxTokensPerMessage": 700,
+    "fitMessagesInContextMethod": "summarizeOld",
+    "autoGenerateMemories": "none"
+  },
+  "initialMessages": [],
+  "modules": [],
+  "metadata": {
+    "runtimeReady": false,
+    "notes": "Copy this file and replace every example value."
+  }
+}
